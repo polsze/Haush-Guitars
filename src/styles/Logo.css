@@ -1,0 +1,7 @@
+.logo-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	background-color: #000;
+}

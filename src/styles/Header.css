@@ -1,0 +1,64 @@
+.header-container {
+	background-image: url(../images/ebano.jpg);
+	border: 1px solid grey;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: 1s;
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.navbar-collapse {
+	transition: 1s;
+	text-align: center;
+}
+
+.collapse {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.nav-item {
+	margin-right: 50px;
+	text-align: center;
+}
+
+.nav-item a {
+	color: #fff;
+}
+
+.nav-item a:hover {
+	color: #C80A39;
+}
+
+
+.navbar-toggler {
+	background-color: transparent;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid	black;
+}
+
+.navbar-toggler-icon {
+	background-color: transparent;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/** MEDIA QUERIES**/
+
+@media screen and (max-width: 992px) {
+	.nav-item {
+		margin-right: 0;
+		text-align: center;
+}
+}
+
