@@ -35,11 +35,21 @@
 }
 
 /** MEDIA QUERIES **/
+@media screen and (max-width: 540px) {
+	.guitar {
+	height: 41.5vh;
+	width: 100%;
+	margin-top: 5px;
+	object-fit: fill;
+}
+}
+
 @media screen and (max-width: 280px) {
 	.guitar{
-		height: 75vh;
+		height: 50vh;
 		width: 100%;
-		object-position: 83% 55%;
+		object-position: 97% 55%;
+		object-fit: cover;
 	}
 }
 

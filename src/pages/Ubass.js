@@ -1,8 +1,28 @@
 import React from 'react';
-import UbassImg from '../images/ubassImg.jpg'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import FotoUBass1 from '../images/ubass.png'
+import FotoUBass2 from '../images/ubass3.png'
+import FotoUBass3 from  '../images/ubass4.png'
+import FotoUBass4 from  '../images/ubass5.png'
 import '../styles/Ubass.css';
 
 function Ubass() {
+   const [showModal, setShowModal] = useState(false);
+    const [selectedImg, setSelectedImg] = useState('');
+    
+
+      const imgModalUbass = {
+    [FotoUBass1]: FotoUBass1,
+    [FotoUBass2]: FotoUBass2,
+    [FotoUBass3]: FotoUBass3,
+    [FotoUBass4]: FotoUBass4
+  }
+  const handleImgClick = (imgSrc) => {
+    setShowModal(true);
+    setSelectedImg(imgSrc);
+
+  }
   return (
     <>
       <div className='ubassBg-container container-fluid'>
@@ -41,15 +61,29 @@ function Ubass() {
               <li className='features-list'>Cuerdas: Ernie Ball wood</li>
             </ul>
           </div>
-          <div class="image">
-            <img src={UbassImg} className='ubassCollage img-fluid'/>
+          <div class="images-ubass-container">
+            <img src={FotoUBass1} className='img-ubass img-fluid' onClick={() => handleImgClick(FotoUBass1)} alt='Bajo Acustico U-Bass'/>
+            <img src={FotoUBass2} className='img-ubass img-fluid' onClick={() => handleImgClick(FotoUBass2)} alt='Bajo Acustico U-Bass'/>
+            <img src={FotoUBass3} className='img-ubass img-fluid' onClick={() => handleImgClick(FotoUBass3)} alt='Bajo Acustico U-Bass'/>
+            <img src={FotoUBass4} className='img-ubass img-fluid' onClick={() => handleImgClick(FotoUBass4)} alt='Bajo Acustico U-Bass'/>
+          {/* Modal */}
+      {showModal && (
+        <div className='modalUbass' data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">
+          <div className='modalUbass2'>
+            
+            <img src={imgModalUbass[selectedImg]} alt='' className='ubass-Img2 img-fluid' alt='Bajo Acustico U-Bass'/>
+            
+            <a onClick={() => setShowModal(false)}><i class="bi bi-x-circle"></i></a>
           </div>
         </div>
-        <div className='video-container-grasa'>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/cEPXxXSHUfI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
+      )}
+          </div>
+
+        </div>
+
       </div>
-    <hr width='100%' className='line'/>
+      <Link to='/instruments' className='back-button'><p>ATRÁS</p></Link>
+    <hr width='100%' className='line' />
     </>
   );
 }

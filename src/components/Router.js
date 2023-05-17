@@ -39,7 +39,7 @@ export default function Router() {
             <Route path="/" element={<Home/>}/>
             <Route path="/instruments" element={<Instruments/>}/>
             <Route path="/instruments/grasadepez" element={<Grasa/>}/>
-            <Route path="/instruments/indiomini" element={<IndioMini/>}/>
+            <Route path="/instruments/ismini" element={<IndioMini/>}/>
             <Route path="/instruments/ubass" element={<Ubass/>}/>
             <Route path="/instruments/signature" element={<Signature/>}/>
             <Route path="/contact" element={<Contact/>}/>

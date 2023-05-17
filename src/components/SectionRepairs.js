@@ -17,7 +17,7 @@ function SectionRepairs() {
 						<li>~ Restauraciones </li>
 						<li>~ Reentrastados </li>
 					</ul>
-					<p className='textRepairs-contact'>Para pedir turno contactarse a través del Formulario de <Link to="/contact">CONTACTO</Link>, WhatsApp, o Redes Sociales.</p>
+					<p className='textRepairs-contact'>Para contactarse utilice el Formulario de <Link to="/contact">CONTACTO</Link>, WhatsApp, o Redes Sociales.</p>
 			</div>
 		</div>
 		</div>

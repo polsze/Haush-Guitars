@@ -1,8 +1,28 @@
 import React from 'react';
-import Indio3 from '../images/indioImg2.png'
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import FotoIS1 from '../images/ismini.jpeg'
+import FotoIS2 from '../images/ismini2.png'
+import FotoIS3 from  '../images/ismini3.png'
+import FotoIS4 from  '../images/ismini4.png'
 import '../styles/IndioMini.css';
 
 function IndioMini() {
+   const [showModal, setShowModal] = useState(false);
+    const [selectedImg, setSelectedImg] = useState('');
+    
+
+      const imgModalIS = {
+    [FotoIS1]: FotoIS1,
+    [FotoIS2]: FotoIS2,
+    [FotoIS3]: FotoIS3,
+    [FotoIS4]: FotoIS4
+  }
+  const handleImgClick = (imgSrc) => {
+    setShowModal(true);
+    setSelectedImg(imgSrc);
+
+  }
 	return (
 		<>
 		<div className='indioBg-container container-fluid'>
@@ -41,16 +61,29 @@ function IndioMini() {
       <li className='features-list'>Cuerdas: Ernie Ball wood</li>
     </ul>
   </div>
-  <div class="image">
-    <img src={Indio3} className='indio1 img-fluid'/>
-  </div>
-</div>
+  <div class="images-is-container">
+    <img src={FotoIS1} className='indio1 img-fluid'onClick={() => handleImgClick(FotoIS1)} alt='Guitarra Acustica Haush IS MINI' />
+    <img src={FotoIS2} className='indio1 img-fluid'onClick={() => handleImgClick(FotoIS2)} alt='Guitarra Acustica Haush IS MINI' />
+    <img src={FotoIS3} className='indio1 img-fluid'onClick={() => handleImgClick(FotoIS3)} alt='Guitarra Acustica Haush IS MINI' />
+    <img src={FotoIS4} className='indio1 img-fluid'onClick={() => handleImgClick(FotoIS4)} alt='Guitarra Acustica Haush IS MINI' />
+     {/* Modal */}
+      {showModal && (
+        <div className='modalIS' data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">
+          <div className='modalIS2'>
+            <img src={imgModalIS[selectedImg]} alt='' className='is-Img2 img-fluid'  alt='Guitarra Acustica Haush IS MINI' />
+            <a onClick={() => setShowModal(false)}><i class="bi bi-x-circle"></i></a>
+          </div>
+        </div>
+      )}
+          </div>
 
-		</div>
-		<hr width='100%' className='line'/>
-    
-		</>
-	);
+        </div>
+
+      </div>
+      <Link to='/instruments' className='back-button'><p>ATRÁS</p></Link>
+    <hr width='100%' className='line' />
+    </>
+  );
 }
 
 export default IndioMini;

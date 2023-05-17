@@ -3,7 +3,7 @@ import '../styles/Instruments.css';
 import Guitar6 from '../images/grasadepez.png';
 import Guitar7 from '../images/guitar7.png';
 import Guitar8 from '../images/guitarcomotto4.png';
-import Ubass from '../images/ubass3.png';
+import Ubass from '../images/ubass6.png';
 import { Link } from 'react-router-dom';
 
 function Instruments() {
@@ -15,134 +15,40 @@ return (
 <div className='instruments-container container-fluid'>
    <div class="container">
     <div class="image">
-      <Link to='/instruments/signature'><img src={Guitar8} alt="Guitarra"  className='guitar7'/></Link>
+      <Link to='/instruments/signature'><img src={Guitar8} alt="Guitarra Acustica Baltasar Comotto"  className='guitar7' /></Link>
     </div>
     <div class="characteristics">
       <h2 className='instrumentsTitle'>Guitarra Acústica Baltazar Comotto</h2>
-      <ul>
-        <li className='features-list'>Tapa: Caoba maciza</li>
-        <li className='features-list'>Aros: Caoba maciza</li>
-        <li className='features-list'>Fondo: Caoba maciza</li>
-        <li className='features-list'>Barras armonicas: Pino Abeto</li>
-        <li className='features-list'>Barras de estructura del fondo: Cedro Paraguay</li>
-        <li className='features-list'>Diente de perro: Cedro Paraguay</li>
-        <li className='features-list'>Mango: Cancharana</li>
-        <li className='features-list'>Diapason: Ébano</li>
-        <li className='features-list'>Tapa cabeza: Ébano</li>
-        <li className='features-list'>Puente: Ébano</li>
-        <li className='features-list'>Detalles debajo del mango (zoque) y atrás del cuerpo: Ébano</li>
-        <li className='features-list'>Incrustaciones en pala, diapasón y pickguard: Sicomoro</li>
-        <li className='features-list'>Pickguard: Ébano</li>
-        <li className='features-list'>Tensor: doble acción</li>
-        <li className='features-list'>Clavijas: Gotoh Japón negras</li>
-        <li className='features-list'>Cejilla: Nubone (Canadá)</li>
-        <li className='features-list'>Cejuela puente: Nubone (Canadá)</li>
-        <li className='features-list'>Escala: 578 m m</li>
-        <li className='features-list'>Trastes holandeses: 2.2 mm</li>
-        <li className='features-list'>Terminación: Laca Nitrocelulosa</li>
-        <li className='features-list'>Diapasón radio: 12</li>
-        <li className='features-list'>Pickguard cubre tensor: Ébano</li>
-        <li className='features-list'>Cuerdas: Ernie Ball wood</li>
-      </ul>
+      <p className='instruments-text'>La guitarra acústica Haush fue diseñada por Baltasar Comotto. La idea fue construir un modelo sobrio, cómodo para ejecutar con buenos graves, medios y agudos dandole estabilidad y cuerpo al sonido. <b>Haga click en la imagen para ver más...</b></p>
     </div>
   </div>
   <div class="container">
     <div class="image">
-      <Link to='/instruments/indiomini'><img src={Guitar7} alt="Guitarra"  className='guitar7'/></Link>
+      <Link to='/instruments/ismini'><img src={Guitar7} alt="Guitarra Acustica IS MINI"  className='guitar7'/></Link>
     </div>
     <div class="characteristics">
       <h2 className='instrumentsTitle'>Guitarra acústica IS Mini</h2>
-      <ul>
-        <li className='features-list'>Tapa: Caoba maciza</li>
-        <li className='features-list'>Aros: Caoba maciza</li>
-        <li className='features-list'>Fondo: Caoba maciza</li>
-        <li className='features-list'>Barras armonicas: Pino Abeto</li>
-        <li className='features-list'>Barras de estructura del fondo: Cedro Paraguay</li>
-        <li className='features-list'>Diente de perro: Cedro Paraguay</li>
-        <li className='features-list'>Mango: Cancharana</li>
-        <li className='features-list'>Diapason: Ébano</li>
-        <li className='features-list'>Tapa cabeza: Ébano</li>
-        <li className='features-list'>Puente: Ébano</li>
-        <li className='features-list'>Detalles debajo del mango (zoque) y atrás del cuerpo: Ébano</li>
-        <li className='features-list'>Incrustaciones en pala, diapasón y pickguard: Sicomoro</li>
-        <li className='features-list'>Pickguard: Ébano</li>
-        <li className='features-list'>Tensor: doble acción</li>
-        <li className='features-list'>Clavijas: Gotoh Japón negras</li>
-        <li className='features-list'>Cejilla: Nubone (Canadá)</li>
-        <li className='features-list'>Cejuela puente: Nubone (Canadá)</li>
-        <li className='features-list'>Escala: 578 m m</li>
-        <li className='features-list'>Trastes holandeses: 2.2 mm</li>
-        <li className='features-list'>Terminación: Laca Nitrocelulosa</li>
-        <li className='features-list'>Diapasón radio: 12</li>
-        <li className='features-list'>Pickguard cubre tensor: Ébano</li>
-        <li className='features-list'>Cuerdas: Ernie Ball wood</li>
-      </ul>
+      <p className='instruments-text'>La guitarra acústica IS mini fue ideada junto con Gaspar Benegas. Buscamos reducir la escala y tamaño del cuerpo sin perder calidad sonora. Se hizo encapié en resaltar detalles en su construcción y es ideal para llevar de viaje por su tamaño de 83cm de largo total. <b>Haga click en la imagen para ver más...</b></p>
     </div>
   </div>
   
   <div class="container">
     <div class="image">
-      <Link to='/instruments/grasadepez'><img src={Guitar6} alt="Guitarra" className='guitar6'/></Link>
+      <Link to='/instruments/grasadepez'><img src={Guitar6} alt="Bajo Acustico Grasa de Pez" className='guitar6'/></Link>
     </div>
     <div class="characteristics">
       <h2 className='instrumentsTitle'>Bajo Acústico Grasa de Pez</h2>
-      <ul>
-        <li className='features-list1'>Tapa: Caoba maciza</li>
-        <li className='features-list1'>Aros: Caoba maciza</li>
-        <li className='features-list1'>Fondo: Caoba maciza</li>
-        <li className='features-list1'>Barras armonicas: Pino Abeto</li>
-        <li className='features-list1'>Barras de estructura del fondo: Cedro Paraguay</li>
-        <li className='features-list1'>Diente de perro: Cedro Paraguay</li>
-        <li className='features-list1'>Mango: Cancharana</li>
-        <li className='features-list1'>Diapason: Ébano</li>
-        <li className='features-list1'>Tapa cabeza: Ébano</li>
-        <li className='features-list1'>Puente: Ébano</li>
-        <li className='features-list1'>Detalles debajo del mango (zoque) y atrás del cuerpo: Ébano</li>
-        <li className='features-list1'>Incrustaciones en pala, diapasón y pickguard: Sicomoro</li>
-        <li className='features-list1'>Pickguard: Ébano</li>
-        <li className='features-list1'>Tensor: doble acción</li>
-        <li className='features-list1'>Clavijas: Gotoh Japón negras</li>
-        <li className='features-list1'>Cejilla: Nubone (Canadá)</li>
-        <li className='features-list1'>Cejuela puente: Nubone (Canadá)</li>
-        <li className='features-list1'>Escala: 578 mm</li>
-        <li className='features-list1'>Trastes holandeses: 2.2 mm</li>
-        <li className='features-list1'>Terminación: Laca Nitrocelulosa</li>
-        <li className='features-list1'>Diapasón radio: 12</li>
-        <li className='features-list1'>Pickguard cubre tensor: Ébano</li>
-        <li className='features-list1'>Cuerdas: Ernie Ball wood</li>
-      </ul>
+      <p className='instruments-text'>El Bajo acústico Grasa de Pez fue pensado para el bajista Cristian "Titi" Lapolla. Se pensó en reducir un poco el tamaño del cuerpo sin perder volumen y calidad sonora. Tiene un Mic en la boca para poder usarlo en estudios o shows en vivo. El cuteway favorece en la ejecución de las notas más agudas. Buenos graves y medios. <b>Haga click en la imagen para ver más...</b></p>
     </div>
   </div>
   <div class="container">
     <div class="image">
-      <Link to='/instruments/ubass'><img src={Ubass} alt="Guitarra"  className='guitar6'/></Link>
+      <Link to='/instruments/ubass'><img src={Ubass} alt="Bajo Acustico U-Bass"  className='guitar6'/></Link>
     </div>
     <div class="characteristics">
       <h2 className='instrumentsTitle'>Bajo Acústico U-Bass</h2>
       <ul>
-        <li className='features-list'>Tapa: Caoba maciza</li>
-        <li className='features-list'>Aros: Caoba maciza</li>
-        <li className='features-list'>Fondo: Caoba maciza</li>
-        <li className='features-list'>Barras armonicas: Pino Abeto</li>
-        <li className='features-list'>Barras de estructura del fondo: Cedro Paraguay</li>
-        <li className='features-list'>Diente de perro: Cedro Paraguay</li>
-        <li className='features-list'>Mango: Cancharana</li>
-        <li className='features-list'>Diapason: Ébano</li>
-        <li className='features-list'>Tapa cabeza: Ébano</li>
-        <li className='features-list'>Puente: Ébano</li>
-        <li className='features-list'>Detalles debajo del mango (zoque) y atrás del cuerpo: Ébano</li>
-        <li className='features-list'>Incrustaciones en pala, diapasón y pickguard: Sicomoro</li>
-        <li className='features-list'>Pickguard: Ébano</li>
-        <li className='features-list'>Tensor: doble acción</li>
-        <li className='features-list'>Clavijas: Gotoh Japón negras</li>
-        <li className='features-list'>Cejilla: Nubone (Canadá)</li>
-        <li className='features-list'>Cejuela puente: Nubone (Canadá)</li>
-        <li className='features-list'>Escala: 578 m m</li>
-        <li className='features-list'>Trastes holandeses: 2.2 mm</li>
-        <li className='features-list'>Terminación: Laca Nitrocelulosa</li>
-        <li className='features-list'>Diapasón radio: 12</li>
-        <li className='features-list'>Pickguard cubre tensor: Ébano</li>
-        <li className='features-list'>Cuerdas: Ernie Ball wood</li>
+        <p className='instruments-text'>El Ukebass acústico fue diseñado junto con Broder Bastos. Se construyó con cuerdas de caucho que son más suave de tocar y brindan un sonido parecido a un contrabajo. Tiene un pre para poder usarlo tanto en salas de ensayos, estudios o shows en vivo. <b>Haga click en la imagen para ver más...</b></p>
       </ul>
     </div>
   </div>

@@ -30,16 +30,23 @@
   flex: 1;
 }
 
-.signatureCollage {
-	width: auto;
-	height: 100%;
-	object-fit: contain;
-	text-align: center;
+.images-signature-container {
+  width: 60%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 50px;
+
+}
+
+.img-signature {
+  width: 50%;
+  height: 50%;
+  cursor: pointer;
 }
 
 .characteristics h3  {
   color: #fff;
-  font-size: 2.8em;
+  font-size: 2.2em;
 }
 
 .features-list {
@@ -47,4 +54,108 @@
   line-height: 1.2;
   border-bottom: 1px solid grey;
   color: #fff;
+}
+
+.modalSignature {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Agregar un valor alto de z-index */
+}
+
+.modalSignature2 {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-image: url(../images/mastiles.jpeg);
+  background-color: rgb(30,30,30);
+  background-blend-mode: soft-light;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: justify;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.modalSignature .signature-Img2 {
+  width: 80%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 2px 6px 98px 0px rgba(250,250,250,0.75);
+-webkit-box-shadow: 2px 6px 98px 0px rgba(250,250,250,0.75);
+-moz-box-shadow: 2px 6px 98px 0px rgba(250,250,250,0.75);
+border-radius: 10px;
+}
+
+.modalText {
+  color: #fff;
+  margin-top: 15px;
+}
+
+.modalSignature a {
+  position: absolute;
+  top: 1px;
+  right: 5px;
+  border-radius: 10px;
+  padding: 2px;
+  font-size: 1.5em;
+}
+
+.modalTitle2 {
+  margin-top: 5px;
+  margin-left: 30px;
+  font-size: 2em;
+  color: #fff;
+}
+
+.bi-x-circle {
+  transition: 1s;
+  color: yellow;
+}
+
+.bi-x-circle:hover {
+  color: red;
+}
+
+.back-button {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+/** MEDIA QUERIES **/
+
+@media screen and (max-width: 540px) {
+  .signatureBg-container {
+     height: 40vh;
+  }
+
+  .characteristics h3 {
+    font-size: 1.7em;
+  
+  }
+
+.modalSignature2{
+  width: 100%;
+}
+
+.modalSignature .signature-Img2 {
+  width: 100%;
+}
+
+.images-signature-container {
+  width: 100%;
+}
 }

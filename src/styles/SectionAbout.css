@@ -1,15 +1,8 @@
 .about-container {
-
 }
 
 .about-container2 {
   display: flex;
-}
-
-.left-about {
-  background-image: url(../images/reparacion.png); 
-  background-repeat: no-repeat;
-  transition: 1s;
 }
 
 .right-about {

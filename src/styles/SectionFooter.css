@@ -1,5 +1,5 @@
 .footer-container {
- display: flex;
+  display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
@@ -63,5 +63,9 @@
   justify-content: center;
   text-align: center;
   height: auto;
+}
+
+.logoFooter {
+  margin-left: 12px;
 }
 }

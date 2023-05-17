@@ -1,5 +1,5 @@
 .header-container {
-	background-image: url(../images/ebano.jpg);
+	background-image: url(../images/bgcaoba.jpg);
 	border: 1px solid grey;
 	display: flex;
 	justify-content: center;
@@ -17,6 +17,7 @@
 	transition: 1s;
 	text-align: center;
 }
+
 
 .collapse {
 	font-family: 'Titillium Web', sans-serif;
@@ -37,7 +38,7 @@
 
 
 .navbar-toggler {
-	background-color: transparent;
+	background-color: rgb(222, 203, 108);
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -46,7 +47,7 @@
 }
 
 .navbar-toggler-icon {
-	background-color: transparent;
+	background-color: rgb(222, 203, 108);
 	text-align: center;
 	display: flex;
 	justify-content: center;

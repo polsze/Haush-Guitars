@@ -1,10 +1,30 @@
 import React from 'react';
-import Guitar6 from '../images/guitar7.png';
-import Grasa1 from '../images/grasaImg3.jpg'
-import Lapolla from '../images/titi.png';
-import Grasa2 from '../images/grasaImg2.jpg';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
+import FotoGrasa1 from '../images/grasa1.png'
+import FotoGrasa2 from '../images/grasa2.png'
+import FotoGrasa3 from  '../images/grasa3.png'
+import FotoGrasa4 from  '../images/grasa4.png'
 import '../styles/Grasa.css';
+
 function Grasa() {
+
+  const [showModal, setShowModal] = useState(false);
+    const [selectedImg, setSelectedImg] = useState('');
+    
+
+      const imgModalGrasa = {
+    [FotoGrasa1]: FotoGrasa1,
+    [FotoGrasa2]: FotoGrasa2,
+    [FotoGrasa3]: FotoGrasa3,
+    [FotoGrasa4]: FotoGrasa4
+  }
+  const handleImgClick = (imgSrc) => {
+    setShowModal(true);
+    setSelectedImg(imgSrc);
+
+  }
+
 return (
 <>
 <div className='grasaBg-container container-fluid'>
@@ -40,16 +60,31 @@ return (
         <li className='features-list'>Cuerdas: Ernie Ball wood</li>
       </ul>
     </div>
-    <div class="image">
-      <img src={Grasa1} className='grasa1 img-fluid'/>
-    </div>
-  </div>
-  <div className='video-container-grasa'>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/rxX9mHL3WGw?fs=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-  </div>
-</div>
-<hr width='100%' className='line'/>
-</>
-);
+    <div class="images-grasa-container">
+            <img src={FotoGrasa1} className='img-grasa img-fluid' onClick={() => handleImgClick(FotoGrasa1)} alt='Bajo Haush Grasa de Pez' />
+            <img src={FotoGrasa2} className='img-grasa img-fluid' onClick={() => handleImgClick(FotoGrasa2)} alt='Bajo Haush Grasa de Pez' />
+            <img src={FotoGrasa3} className='img-grasa img-fluid' onClick={() => handleImgClick(FotoGrasa3)} alt='Bajo Haush Grasa de Pez' />
+            <img src={FotoGrasa4} className='img-grasa img-fluid' onClick={() => handleImgClick(FotoGrasa4)} alt='Bajo Haush Grasa de Pez' />
+            {/* Modal */}
+      {showModal && (
+        <div className='modalGrasa' data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">
+          <div className='modalGrasa2'>
+            
+            <img src={imgModalGrasa[selectedImg]} alt='' className='grasa-Img2 img-fluid'  alt='Bajo Haush Grasa de Pez' />
+            
+            <a onClick={() => setShowModal(false)}><i class="bi bi-x-circle"></i></a>
+          </div>
+        </div>
+      )}
+          </div>
+
+        </div>
+
+      </div>
+      <Link to='/instruments' className='back-button'><p>ATRÁS</p></Link>
+    <hr width='100%' className='line' />
+    </>
+  );
 }
+
 export default Grasa;
