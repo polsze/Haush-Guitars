@@ -7,7 +7,8 @@ function SectionAbout() {
 		<div className='about-container container-fluid' id="AboutUs">
 			<hr width='100%' className='line'/>
 			<div className='about-container2'>
-				<div className='left-about'>
+				<div className='left-about' data-aos="fade-up"
+     data-aos-duration="3000">
 				<img src={guitars} className='guitar-about img-fluid' alt='Bajo de Haush Guitars' />
 				</div>
 				<div className='right-about'>

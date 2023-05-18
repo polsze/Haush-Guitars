@@ -80,7 +80,7 @@ return (
 		<p className='contact-text'>Buenos Aires, Argentina</p>
 		<i class="bi bi-envelope"></i>
 		<p className='contact-text'>haushguitars@gmail.com</p>
-		<i class="bi bi-phone"></i><p className='contact-text'>152332556</p>
+		<i class="bi bi-phone"></i><p className='contact-text'>1537034641</p>
 		</div>
 
 		

@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Header.css';
-import haushLogo from '../images/haushlogo.png';
+import haushLogo1 from '../images/haushlogo1.png';
 import Contact from '../pages/Contact';
 import { Link } from 'react-router-dom';
 
@@ -10,6 +10,11 @@ function Header(props) {
 
     <div className='header-container container-fluid'>
       <nav className="navbar navbar-expand-lg">
+      <div className='logo-container' id='totop'>
+        <a href='/' className="navbar-brand">
+              <img src={haushLogo1} className='logo img-fluid' alt="Logo de Haush Guitars" width="110" height="60"/>
+            </a>
+      </div>
         
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
@@ -22,6 +27,9 @@ function Header(props) {
                 <li className="nav-item">
                   <Link className="nav-link" to="/instruments">Instrumentos</Link>
                 </li>              
+                <li className="nav-item">
+                  <Link className="nav-link" to="/instruments">Sobre Nosotros</Link>
+                </li>  
                 <li className="nav-item">
                   <Link className="nav-link" to="/contact">Contacto</Link>
                 </li>

@@ -1,10 +1,9 @@
 .header-container {
-	background-image: url(../images/bgcaoba.jpg);
-	border: 1px solid grey;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	transition: 1s;
+	background-color: #000;
 }
 
 .navbar {
@@ -30,10 +29,11 @@
 
 .nav-item a {
 	color: #fff;
+	font-size: 1.3em;
 }
 
 .nav-item a:hover {
-	color: #C80A39;
+	color: rgb(222, 203, 108);
 }
 
 
@@ -52,6 +52,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.social-containerH i {
+	color: rgb(222, 203, 108);
 }
 
 /** MEDIA QUERIES**/

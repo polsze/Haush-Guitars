@@ -10,7 +10,7 @@ import Bastos from '../images/bastos4.png'
 import Scaglione from '../images/scaglione.jpeg'
 import Mariel from '../images/mariel1.png'
 import Sotelo from '../images/marcossotelo1.png'
-import haushLogo from '../images/haushlogo.png';
+import haushLogo1 from '../images/logohaushtransparente.png';
 import Sotelo2 from '../images/sotelo.jpeg'
 import Timido from '../images/carlossolari1.png'
 import Balta2 from '../images/baltavivo.jpg'

@@ -1,4 +1,3 @@
-import Logo from '../components/Logo';
 import Header from '../components/Header';
 import SectionImg from '../components/SectionImg';
 import SectionArtists from '../components/SectionArtists';
@@ -21,7 +20,6 @@ export default function Router() {
 	  const Layout = () => {
     return (
       <>
-        <Logo/>
         <Header/>
         <Outlet/>
         <SectionFooter/>

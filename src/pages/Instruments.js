@@ -10,7 +10,8 @@ function Instruments() {
 return (
 <>
 <div className='instrumentsBg-container' >
-  <h2 className='title-ins' data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">HAUSH INSTRUMENTS</h2>
+  <h2 className='title-ins' data-aos="fade-up"
+     data-aos-duration="3000">HAUSH INSTRUMENTS</h2>
 </div>
 <div className='instruments-container container-fluid'>
    <div class="container">
