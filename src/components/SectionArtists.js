@@ -36,17 +36,6 @@ function SectionArtists() {
     [Sotelo]: 'Marcos Sotelo'
   };
 
-  const textArtists = {
-    [Indio]: 'El Indio Solari es el músico más convocante del país y dueño de una lista de canciones que subsiste en el inconsciente colectivo de muchas generaciones. Sin dudas, uno de los máximos referentes de nuestro rock.',
-    [Balta]: 'Actualmente guitarrista en Los Fundamentalistas del Aire Acondicionado. Pero a finales de la década del 80, Baltasar Comotto era un adolescente introvertido que pasaba las tardes mirando recitales de Jimi Hendrix en VHS.',
-    [Gaspar]: 'Debutó a la edad de doce años, cuando fue invitado por Pappo. Desde 2019 hasta hoy es una de las principales voces dentro de Los Fundamentalistas desde la ausencia de Solari.',
-    [Titi]: ['Titi se empieza a interesar por la música bajo la influencia de Duran Duran y su bajista e ídolo, John Taylor. Sin saberlo, años más tarde Titi sería integrante de la banda de Nü Metal argentina más grande de todos los tiempos.'],
-    [Bastos]: ['Broder Bastos nació en Rio Grande do Sul, Brazil. Desde niño evidenció su vocación por la música, desplegando su gran talento. Actualmente es el bajista de Ciro y Los Persas.'],
-    [Scaglione]: ['Reconocido por ser el bajista y vocalista de la banda punk rock bonaerense Attaque 77, desde 1992. Además de su trabajo como músico, Scaglione es cocinero profesional.'],
-    [Mariel]: ['No podiamos no contar con UNA GRAN GUITARRISTA. Mariel actualmente integra "La Con Todo Band".'],
-    [Sotelo]: ['Sotelo es un músico y productor argentino, que vive actualmente en Estados Unidos, donde se rodea con reconocidos músicos a nivel mundial.']
-  }
-
   const ytLinks = {
     [Indio]: 'https://www.youtube.com/embed/i-wenDno1lA',
     [Balta]: 'https://www.youtube.com/embed/MAGWtuJDJgE',
@@ -69,6 +58,17 @@ function SectionArtists() {
     [Sotelo]: Sotelo2
   }
 
+  const trayectoryModal = {
+    [Indio]: ["Patricio Rey y sus Redonditos de Ricota", "Indio Solari Y los Fundamentalistas del Aire Acondicionado"],
+    [Balta]: ["Luis Alberto Spinetta", "Andrés Calamaro", "Los Fundamentalistas del Aire Acondicionado"],
+    [Gaspar]: ["Las Manos de Filippi", "Los Fundamentalistas del Aire Acondicionado", "La Mono"],
+    [Titi]: ["A.N.I.M.A.L", "Simbiosis", "Power Of Soul", "Raptor"],
+    [Bastos]: ["Ciro y los Persas"],
+    [Scaglione]: ["Attaque 77"],
+    [Mariel]: ["La Con Todo Band"],
+    [Sotelo]: ["Sawtelle"]
+  }
+
   const handleImgClick = (imgSrc) => {
     setShowModal(true);
     setSelectedImg(imgSrc);
@@ -84,7 +84,6 @@ function SectionArtists() {
       <img src={Gaspar} className='artist-Img img-fluid' onClick={() => handleImgClick(Gaspar)} alt='Gaspar Benegas' />
       <img src={Titi} className='artist-Img img-fluid' onClick={() => handleImgClick(Titi)} alt='Cristian "Titi" Lapolla' />
       <img src={Bastos} className='artist-Img img-fluid' onClick={() => handleImgClick(Bastos)} alt='Broder Bastos' />
-      
       <img src={Scaglione2} className='artist-Img img-fluid' onClick={() => handleImgClick(Scaglione)} alt='Luciano Scaglione' />
       <img src={Mariel} className='artist-Img img-fluid' onClick={() => handleImgClick(Mariel)} alt='Mariel Fuertes' />
       <img src={Sotelo} className='artist-Img img-fluid' onClick={() => handleImgClick(Sotelo)} alt='Marcos Sotelo' />
@@ -95,7 +94,12 @@ function SectionArtists() {
           <div className='modalArtist2'>
             <h3 className='modalTitle'>{artists[selectedImg]}</h3>
             <img src={imgModal[selectedImg]} alt='' className='artist-Img2 img-fluid' alt='Imagel del modal'/>
-            <p className='modalText'>{textArtists[selectedImg ]}</p>
+            <ul><h6 className='titleTrayectory'>Trayectoria:</h6>
+              <li className='band'>{trayectoryModal[selectedImg][0]}</li>
+              <li className='band'>{trayectoryModal[selectedImg][1]}</li>
+              <li className='band'>{trayectoryModal[selectedImg][2]}</li>
+              <li className='band'>{trayectoryModal[selectedImg][3]}</li>
+            </ul>
            	 <iframe className='ytVid' width="350" height="350" src={ytLinks[selectedImg]} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             <a onClick={() => setShowModal(false)}><i class="bi bi-x-circle"></i></a>
           </div>

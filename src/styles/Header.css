@@ -6,6 +6,9 @@
 	background-color: #000;
 }
 
+.logo-container {
+	margin-right: 25px;
+}
 .navbar {
 	display: flex;
 	justify-content: center;
@@ -16,7 +19,6 @@
 	transition: 1s;
 	text-align: center;
 }
-
 
 .collapse {
 	font-family: 'Titillium Web', sans-serif;
@@ -29,7 +31,7 @@
 
 .nav-item a {
 	color: #fff;
-	font-size: 1.3em;
+	font-size: 1.2em;
 }
 
 .nav-item a:hover {

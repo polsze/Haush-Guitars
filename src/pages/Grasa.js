@@ -28,7 +28,8 @@ function Grasa() {
 return (
 <>
 <div className='grasaBg-container container-fluid'>
-  <h2 className='title-ins' data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">Bajo acústico Grasa de Pez</h2>
+  <h2 className='title-ins' data-aos="fade-up"
+     data-aos-duration="3000">Bajo acústico Grasa de Pez</h2>
 </div>
 <div className='grasa-container container-fluid'>
   <div class="container">

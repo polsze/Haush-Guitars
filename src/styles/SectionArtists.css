@@ -118,15 +118,47 @@ border-radius: 10px;
 
 .bi-x-circle {
   transition: 1s;
-  color: yellow;
+  color: rgb(222, 203, 108);
 }
 
 .bi-x-circle:hover {
   color: red;
 }
 
+.titleTrayectory {
+  color: rgb(222, 203, 108);
+  font-size: 1.5em;
+}
+
+.band {
+  color: #fff;
+}
 
 /** MEDIA QUERIES **/
+@media screen and (max-width: 1024px) {
+  .modalArtist .artist-Img2 {
+    height: 53%;
+  }
+  .modalTexts {
+  display: flex;
+  flex-direction: row;
+}
+
+.modalTexts p {
+  width: 55%;
+}
+
+.modalTexts ul {
+  width: 45%;
+  text-align: center;
+  margin-top: 18px;
+}
+
+.modalTexts li {
+  text-align: center ;
+}
+
+}
 @media screen and (max-width: 912px) {
   .artists-container {
     width: 100%;
@@ -171,8 +203,10 @@ border-radius: 10px;
 
 .modalArtist .artist-Img2 {
   width: 80%;
-  
 }
+
+
+
 
 }
 

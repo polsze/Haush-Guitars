@@ -1,5 +1,5 @@
 import React from 'react';
-import haushLogo1 from '../images/logohaushtransparente.png';
+import haushLogo1 from '../images/haushlogo1.png';
 import '../styles/SectionFooter.css';
 import { Link } from 'react-router-dom';
 

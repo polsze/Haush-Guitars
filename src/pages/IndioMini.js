@@ -26,7 +26,8 @@ function IndioMini() {
 	return (
 		<>
 		<div className='indioBg-container container-fluid'>
-    		<h2 className='title-ins' data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">Guitarra acústica IS Mini</h2>
+    		<h2 className='title-ins' data-aos="fade-up"
+     data-aos-duration="3000">Guitarra acústica IS Mini</h2>
     	</div>
 		<div className='indio-container container-fluid'>
 			

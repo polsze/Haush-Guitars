@@ -11,7 +11,7 @@ return (
 <>
 <div className='instrumentsBg-container' >
   <h2 className='title-ins' data-aos="fade-up"
-     data-aos-duration="3000">HAUSH INSTRUMENTS</h2>
+     data-aos-duration="3000">INSTRUMENTS</h2>
 </div>
 <div className='instruments-container container-fluid'>
    <div class="container">
@@ -49,7 +49,7 @@ return (
     <div class="characteristics">
       <h2 className='instrumentsTitle'>Bajo Acústico U-Bass</h2>
       <ul>
-        <p className='instruments-text'>El Ukebass acústico fue diseñado junto con Broder Bastos. Se construyó con cuerdas de caucho que son más suave de tocar y brindan un sonido parecido a un contrabajo. Tiene un pre para poder usarlo tanto en salas de ensayos, estudios o shows en vivo. <b>Haga click en la imagen para ver más...</b></p>
+        <p className='instruments-text'>El Ukebass acústico fue diseñado junto con Broder Bastos. Se construyó con cuerdas de caucho que son más suave de tocar y brindan un sonido similar a un contrabajo. Tiene un pre para poder usarlo tanto en salas de ensayos, estudios o shows en vivo. <b>Haga click en la imagen para ver más...</b></p>
       </ul>
     </div>
   </div>

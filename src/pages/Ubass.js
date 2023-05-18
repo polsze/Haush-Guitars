@@ -26,7 +26,8 @@ function Ubass() {
   return (
     <>
       <div className='ubassBg-container container-fluid'>
-        <h2 className='title-ins' data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">Bajo acústico U-Bass</h2>
+        <h2 className='title-ins' data-aos="fade-up"
+     data-aos-duration="3000">Bajo acústico U-Bass</h2>
       </div>
       <div className='ubass-container container-fluid'>
       
