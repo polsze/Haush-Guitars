@@ -10,7 +10,7 @@ function Header(props) {
 
     <div className='header-container container-fluid'>
       <nav className="navbar navbar-expand-lg">
-      <div className='logo-container' id='totop'>
+      <div className='logo-container'>
         <a href='/' className="navbar-brand">
               <img src={haushLogo1} className='logo img-fluid' alt="Logo de Haush Guitars" width="110" height="60"/>
             </a>

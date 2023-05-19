@@ -17,7 +17,7 @@ import SmoothScroll from '../components/SmoothScroll.js';
 
 export default function Router() {
 
-	  const Layout = () => {
+    const Layout = () => {
     return (
       <>
         <Header/>
@@ -28,8 +28,8 @@ export default function Router() {
   }
 
   const BrowserRoutes = () => {
-  	return (
-  		<div className='main-container'>
+    return (
+      <div className='main-container'>
         <BrowserRouter>
         <SmoothScroll>
         <Routes>
@@ -46,10 +46,10 @@ export default function Router() {
           </SmoothScroll>
         </BrowserRouter>
       </div>
-  	);
+    );
   }
 
-	return (
-		<BrowserRoutes/>
-	);
+  return (
+    <BrowserRoutes/>
+  );
 }

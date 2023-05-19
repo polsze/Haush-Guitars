@@ -11,7 +11,7 @@
   align-items: center;
 }
 
-.title-ins {
+h2 {
   text-align: center;
   font-weight: 700;
   font-size: 4em;
@@ -25,17 +25,7 @@
   margin-top: 30px;
 }
 
-.image {
-  flex: 1;
-}
-
 .guitar6 {
-  max-width: 100%;
-  height: auto;
-  object-fit: contain;
-}
-
-.guitar7 {
   max-width: 100%;
   height: auto;
   object-fit: contain;
@@ -44,13 +34,6 @@
 .characteristics {
   flex: 1;
   margin-left: 20px;
-}
-
-.instrumentsTitle {
-  font-size: 3em;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #fff;
 }
 
 .instruments-text {
@@ -64,13 +47,7 @@ ul {
   padding: 0;
 }
 
-.features-list1 {
-  margin-bottom: 5px;
-  line-height: 1.2;
-  border-bottom: 1px solid #fff;
-  color: #fff;
-  width: 100%;
-}  
+
 
 /** MEDIA QUERIES **/
 
@@ -84,7 +61,7 @@ ul {
     flex-wrap: wrap;
   }
 
-  .title-ins {
+  h2 {
     text-align: left;
     font-size: 1.25em;
   }
@@ -95,7 +72,7 @@ ul {
 }
 
 @media screen and (max-width: 280px) {
- .title-ins {
+ h2 {
     text-align: left;
     font-size: 1.5em;
   }

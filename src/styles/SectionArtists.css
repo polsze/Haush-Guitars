@@ -20,8 +20,8 @@
   color: #fff;
 }
 
-.artistTitle {
-	font-size: 4em;
+h4 {
+	font-size: 1.5em;
 	color: #fff;
 	text-align: center;
 }
@@ -99,12 +99,7 @@ border-radius: 10px;
   font-size: 1.5em;
 }
 
-.modalTitle {
-  margin-top: 5px;
-  margin-left: 30px;
-  font-size: 2em;
-  color: #fff;
-}
+
 
 .modalTrajectory {
   font-size: 1.6em;
@@ -191,8 +186,8 @@ border-radius: 10px;
     height: 100%;
   }
 
-  .modalTitle {
-    font-size: 1.3em;
+  h4 {
+    font-size: 1.2em;
   }
 
   .modalTrajectory {

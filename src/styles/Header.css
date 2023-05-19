@@ -6,38 +6,15 @@
 	background-color: #000;
 }
 
-.logo-container {
-	margin-right: 25px;
-}
 .navbar {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.navbar-collapse {
-	transition: 1s;
-	text-align: center;
+.logo-container {
+	margin-right: 25px;
 }
-
-.collapse {
-	font-family: 'Titillium Web', sans-serif;
-}
-
-.nav-item {
-	margin-right: 50px;
-	text-align: center;
-}
-
-.nav-item a {
-	color: #fff;
-	font-size: 1.2em;
-}
-
-.nav-item a:hover {
-	color: rgb(222, 203, 108);
-}
-
 
 .navbar-toggler {
 	background-color: rgb(222, 203, 108);
@@ -54,6 +31,29 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.collapse {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+.navbar-collapse {
+	transition: 1s;
+	text-align: center;
+}
+
+.nav-item {
+	margin-right: 50px;
+	text-align: center;
+}
+
+.nav-item a {
+	color: #fff;
+	font-size: 1.1em;
+}
+
+.nav-item a:hover {
+	color: rgb(222, 203, 108);
 }
 
 .social-containerH i {

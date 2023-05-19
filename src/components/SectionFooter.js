@@ -1,7 +1,7 @@
-import React from 'react';
-import haushLogo1 from '../images/haushlogo1.png';
-import '../styles/SectionFooter.css';
-import { Link } from 'react-router-dom';
+import React from "react";
+import haushLogo1 from "../images/haushlogo1.png";
+import "../styles/SectionFooter.css";
+import { Link } from "react-router-dom";
 
 function SectionFooter() {
   return (
@@ -17,9 +17,18 @@ function SectionFooter() {
           />
         </a>
         <div className="social-container">
-          <Link to='https://www.instagram.com/haushguitars/' target='_BLANK' ><i class="bi bi-instagram socialLogo"></i></Link>
-          <Link to='https://www.facebook.com/lokustas.sonido' target='_BLANK'><i class="bi bi-facebook socialLogo"></i></Link>
-          <Link to='https://api.whatsapp.com/send?phone=541537034641' target='_BLANK'><i class="bi bi-whatsapp socialLogo"></i></Link>
+          <Link to="https://www.instagram.com/haushguitars/" target="_BLANK">
+            <i class="bi bi-instagram socialLogo"></i>
+          </Link>
+          <Link to="https://www.facebook.com/lokustas.sonido" target="_BLANK">
+            <i class="bi bi-facebook socialLogo"></i>
+          </Link>
+          <Link
+            to="https://api.whatsapp.com/send?phone=541537034641"
+            target="_BLANK"
+          >
+            <i class="bi bi-whatsapp socialLogo"></i>
+          </Link>
         </div>
       </div>
       <h6>Haush Guitars™ All Rights Reserved.</h6>
@@ -29,8 +38,8 @@ function SectionFooter() {
       </a>
       <p>
         <b>Web Design: </b>
-        Copyright © 2023 Pablo Barrios • Posadas based Freelance
-        Web Designer & Developer
+        Copyright © 2023 Pablo Barrios • Posadas based Freelance Web Designer &
+        Developer
       </p>
     </div>
   );

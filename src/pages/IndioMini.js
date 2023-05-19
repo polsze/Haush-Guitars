@@ -26,8 +26,8 @@ function IndioMini() {
 	return (
 		<>
 		<div className='indioBg-container container-fluid'>
-    		<h2 className='title-ins' data-aos="fade-up"
-     data-aos-duration="3000">Guitarra acústica IS Mini</h2>
+    		<h4 className='title-ins' data-aos="fade-up"
+     data-aos-duration="3000">Guitarra acústica IS Mini</h4>
     	</div>
 		<div className='indio-container container-fluid'>
 			
@@ -63,10 +63,10 @@ function IndioMini() {
     </ul>
   </div>
   <div class="images-is-container">
-    <img src={FotoIS1} className='indio1 img-fluid'onClick={() => handleImgClick(FotoIS1)} alt='Guitarra Acustica Haush IS MINI' />
-    <img src={FotoIS2} className='indio1 img-fluid'onClick={() => handleImgClick(FotoIS2)} alt='Guitarra Acustica Haush IS MINI' />
-    <img src={FotoIS3} className='indio1 img-fluid'onClick={() => handleImgClick(FotoIS3)} alt='Guitarra Acustica Haush IS MINI' />
-    <img src={FotoIS4} className='indio1 img-fluid'onClick={() => handleImgClick(FotoIS4)} alt='Guitarra Acustica Haush IS MINI' />
+    <img src={FotoIS1} className='IS-img img-fluid'onClick={() => handleImgClick(FotoIS1)} alt='Guitarra Acustica Haush IS MINI' />
+    <img src={FotoIS2} className='IS-img img-fluid'onClick={() => handleImgClick(FotoIS2)} alt='Guitarra Acustica Haush IS MINI' />
+    <img src={FotoIS3} className='IS-img img-fluid'onClick={() => handleImgClick(FotoIS3)} alt='Guitarra Acustica Haush IS MINI' />
+    <img src={FotoIS4} className='IS-img img-fluid'onClick={() => handleImgClick(FotoIS4)} alt='Guitarra Acustica Haush IS MINI' />
      {/* Modal */}
       {showModal && (
         <div className='modalIS' data-aos="fade-left" data-aos-offset="300" data-aos-duration="2000">
