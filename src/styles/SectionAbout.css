@@ -1,12 +1,9 @@
-.about-container {
-}
-
 .about-container2 {
   display: flex;
 }
 
 .right-about {
-  background-image: url(../images/ebano.jpg);
+  background-image: url(../images/ebano.png);
   background-color: rgb(30,30,30);
   background-blend-mode: soft-light;
   display: flex;
@@ -30,6 +27,7 @@
   color:#fff;
   font-size: 1.2em;
   font-family: 'Titillium Web', sans-serif;
+  text-align: start;
 }
 
 .line {

@@ -44,14 +44,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Agregar un valor alto de z-index */
+  z-index: 9999; 
 }
 
 .modalIS2 {
   position: relative;
   width: 50%;
   height: 100%;
-  background-image: url(../images/mastiles.jpeg);
+  background-image: url(../images/bgmodal.png);
   background-color: rgb(30,30,30);
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
@@ -85,29 +85,11 @@
   font-size: 1.5em;
 }
 
-.bi-x-circle {
-  transition: 1s;
-  color: yellow;
-}
-
-.bi-x-circle:hover {
-  color: red;
-}
-
-.back-button {
-  text-align: center;
-  font-size: 1.5em;
-}
-
 /** MEDIA QUERIES **/
 
 @media screen and (max-width: 540px) {
   .indioBg-container {
      height: 40vh;
-  }
-
-   h4 {
-    font-size: 1.7em;
   }
 
   .modalIS2{

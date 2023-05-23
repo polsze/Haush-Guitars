@@ -1,5 +1,5 @@
 .signatureBg-container {
-  background-image: url(../images/baltasarcomottovivo.jpeg);
+  background-image: url(../images/baltasarcomottovivo.png);
   width: 100%;
   height: 90vh;
   background-position: center;
@@ -20,33 +20,28 @@
 	align-items: center;
 }
 
+h4  {
+  color: #fff;
+  font-size: 3em;
+  text-align: center;
+}
+
 .container {
   display: flex;
   align-items: center;
   margin-top: 30px;
 }
 
-.image {
-  flex: 1;
-}
-
 .images-signature-container {
   width: 60%;
   display: flex;
   flex-wrap: wrap;
-  padding: 50px;
-
 }
 
 .img-signature {
   width: 50%;
   height: 50%;
   cursor: pointer;
-}
-
-.characteristics h3  {
-  color: #fff;
-  font-size: 2.2em;
 }
 
 .modalSignature {
@@ -68,7 +63,7 @@
   position: relative;
   width: 50%;
   height: 100%;
-  background-image: url(../images/mastiles.jpeg);
+  background-image: url(../images/bgmodal.png);
   background-color: rgb(30,30,30);
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
@@ -87,15 +82,18 @@
   width: 80%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 2px 6px 98px 0px rgba(250,250,250,0.75);
--webkit-box-shadow: 2px 6px 98px 0px rgba(250,250,250,0.75);
--moz-box-shadow: 2px 6px 98px 0px rgba(250,250,250,0.75);
-border-radius: 10px;
+  -webkit-box-shadow: 2px 6px 98px rgba(250,250,250,0.75);
+  -moz-box-shadow: 2px 6px 98px rgba(250,250,250,0.75);
+  box-shadow: 2px 6px 98px rgba(250,250,250,0.75);
+  border-radius: 10px;
 }
 
-.modalText {
+.features-list {
+  margin-right: 40px;
+  margin-bottom: 10px;
+  line-height: 1.2;
+  border-bottom: 1px solid #360B6A;
   color: #fff;
-  margin-top: 15px;
 }
 
 .modalSignature a {
@@ -107,13 +105,6 @@ border-radius: 10px;
   font-size: 1.5em;
 }
 
-.modalTitle2 {
-  margin-top: 5px;
-  margin-left: 30px;
-  font-size: 2em;
-  color: #fff;
-}
-
 .bi-x-circle {
   transition: 1s;
   color: yellow;
@@ -123,10 +114,25 @@ border-radius: 10px;
   color: red;
 }
 
+.back-button p{
+  text-align: center;
+  margin-top: 15px;
+}
+
+.bi-x-circle {
+  transition: 1s;
+  color: #E8EC09;
+}
+
+.bi-x-circle:hover {
+  color: #F74507;
+}
+
 .back-button {
   text-align: center;
   font-size: 1.5em;
 }
+
 
 /** MEDIA QUERIES **/
 
@@ -135,20 +141,21 @@ border-radius: 10px;
      height: 40vh;
   }
 
-  .characteristics h3 {
+  h4 {
     font-size: 1.7em;
-  
   }
 
-.modalSignature2{
-  width: 100%;
-}
 
-.modalSignature .signature-Img2 {
-  width: 100%;
-}
+  .images-signature-container {
+    width: 100%;
+  }
 
-.images-signature-container {
-  width: 100%;
-}
+  .modalSignature2{
+    width: 100%;
+  }
+
+  .modalSignature .signature-Img2 {
+    width: 100%;
+  }
+
 }

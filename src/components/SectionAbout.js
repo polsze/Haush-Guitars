@@ -1,21 +1,22 @@
 import React from "react";
 import "../styles/SectionAbout.css";
 import guitars from "../images/claybass.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function SectionAbout() {
   return (
-    <div className="about-container container-fluid" id="AboutUs">
+    <div className="about-container container-fluid">
       <hr width="100%" className="line" />
       <div className="about-container2">
-        <div className="left-about" data-aos="fade-up" data-aos-duration="3000">
-          <img
+        <div className="left-about">
+          <LazyLoadImage
             src={guitars}
             className="guitar-about img-fluid"
             alt="Bajo de Haush Guitars"
           />
         </div>
         <div className="right-about">
-          <h1 className="aboutTitle">Sobre Haush Guitars</h1>
+          <h1 className="aboutTitle" id='about'>Sobre Haush Guitars</h1>
           <p className="aboutText">
             Haush Guitars tiene su origen en el año 2015. El luthier Nicolás
             Barrios tras años de capacitación y formación, desarrolló sus

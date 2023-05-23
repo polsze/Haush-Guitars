@@ -16,7 +16,7 @@ function SectionRepairs() {
               <li>Restauraciones </li>
               <li>Reentrastados </li>
             </ul>
-            <p className="textRepairs-contact">
+            <p className="textRepairs-container">
               Para contactarse utilice el Formulario de{" "}
               <Link to="/contact">CONTACTO</Link>, WhatsApp, o Redes Sociales.
             </p>

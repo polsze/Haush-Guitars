@@ -44,12 +44,10 @@
   cursor: pointer;
 }
 
-.characteristics h3  {
+h3  {
   color: #fff;
   font-size: 2.2em;
 }
-
-
 
 .modalUbass {
   position: fixed;
@@ -70,7 +68,7 @@
   position: relative;
   width: 50%;
   height: 100%;
-  background-image: url(../images/mastiles.jpeg);
+  background-image: url(../images/bgmodal.png);
   background-color: rgb(30,30,30);
   background-blend-mode: soft-light;
   background-repeat: no-repeat;

@@ -50,14 +50,23 @@
 .nav-item a {
 	color: #fff;
 	font-size: 1.1em;
+	transition: 1s;
 }
 
 .nav-item a:hover {
 	color: rgb(222, 203, 108);
 }
 
+
 .social-containerH i {
 	color: rgb(222, 203, 108);
+	margin: 8px;
+	font-size: 1.5em;
+	transition: 1s;
+}
+
+.social-containerH i:hover {
+	color: red;
 }
 
 /** MEDIA QUERIES**/
@@ -66,6 +75,6 @@
 	.nav-item {
 		margin-right: 0;
 		text-align: center;
-}
+	}
 }
 

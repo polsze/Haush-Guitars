@@ -2,30 +2,33 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/SectionArtists.css";
-import Titi from "../images/titi2.png";
-import Balta from "../images/baltasarcomottovivo3.jpg";
+import HaushLogo from "../images/haushlogo1.png";
+import Balta from "../images/baltasarcomottovivo2.png";
 import Gaspar from "../images/gasparbenegas.png";
-import Indio from "../images/carlossolari2.png";
-import Bastos from "../images/bastos4.png";
-import Scaglione from "../images/scaglione.jpeg";
-import Mariel from "../images/mariel1.png";
+import Titi from "../images/titilapolla.png";
+import Bastos from "../images/bastos.png";
+import Scaglione from "../images/scaglione.png";
+import Sbaraglia from "../images/sbaraglia.png";
+import Mariel from "../images/marielfuertes.png";
 import Sotelo from "../images/marcossotelo1.png";
-import haushLogo1 from "../images/logohaushtransparente.png";
-import Sotelo2 from "../images/sotelo.jpeg";
-import Timido from "../images/carlossolari1.png";
-import Balta2 from "../images/baltavivo.jpg";
-import Titi2 from "../images/titi6.png";
+import Balta2 from "../images/baltasarcomottovivo3.png";
 import Gaspar2 from "../images/apai2.png";
-import Bastos2 from "../images/bastos.jpg";
-import Scaglione2 from "../images/scaglione1.jpg";
-import Mariel2 from "../images/mariel2.jpeg";
+import Titi2 from "../images/titi6.png";
+import Bastos2 from "../images/bastos2.png";
+import Mariel2 from "../images/marielfuertes2.png";
+import Sotelo2 from "../images/sotelo.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
+
+
+
 
 function SectionArtists() {
   const [showModal, setShowModal] = useState(false);
   const [selectedImg, setSelectedImg] = useState("");
 
   const artists = {
-    [Indio]: "Carlos Solari",
+    [Sbaraglia]: "Carlos Solari",
     [Balta]: "Baltasar Comotto",
     [Gaspar]: "Gaspar Benegas",
     [Titi]: 'Cristian "Titi" Lapolla',
@@ -36,7 +39,7 @@ function SectionArtists() {
   };
 
   const ytLinks = {
-    [Indio]: "https://www.youtube.com/embed/i-wenDno1lA",
+    [Sbaraglia]: "https://www.youtube.com/embed/i-wenDno1lA",
     [Balta]: "https://www.youtube.com/embed/MAGWtuJDJgE",
     [Gaspar]: "https://www.youtube.com/embed/ONvgGORQj8k",
     [Titi]: "https://www.youtube.com/embed/rxX9mHL3WGw",
@@ -47,7 +50,7 @@ function SectionArtists() {
   };
 
   const imgModal = {
-    [Indio]: Timido,
+    [Sbaraglia]: Sbaraglia,
     [Balta]: Balta2,
     [Gaspar]: Gaspar2,
     [Titi]: Titi2,
@@ -58,8 +61,7 @@ function SectionArtists() {
   };
 
   const trayectoryModal = {
-    [Indio]: [
-      "Patricio Rey y sus Redonditos de Ricota",
+    [Sbaraglia]: [
       "Indio Solari Y los Fundamentalistas del Aire Acondicionado",
     ],
     [Balta]: [
@@ -71,12 +73,13 @@ function SectionArtists() {
       "Las Manos de Filippi",
       "Los Fundamentalistas del Aire Acondicionado",
       "La Mono",
+      "El Mister y los Marsupiales Extintos"
     ],
     [Titi]: ["A.N.I.M.A.L", "Simbiosis", "Power Of Soul", "Raptor"],
     [Bastos]: ["Ciro y los Persas"],
     [Scaglione]: ["Attaque 77"],
     [Mariel]: ["La Con Todo Band"],
-    [Sotelo]: ["Sawtelle"],
+    [Sotelo]: ["Sawtelle", "Pasión Redonda Tributo (Los Angeles, USA)"],
   };
 
   const handleImgClick = (imgSrc) => {
@@ -86,52 +89,61 @@ function SectionArtists() {
 
   return (
     <>
-      <h4>ARTISTAS</h4>
+      <div className='title-logo-artist-cont'>
+      <h4 className='artistTitle'>ARTISTAS QUE USAN</h4>
+      <LazyLoadImage  
+            src={HaushLogo} 
+            className="logo img-fluid"
+            alt="Logo de Haush Guitars"
+            width="130"
+            height="40"
+       />
+       </div>
       <p className="click">Toque en las imagenes para más...</p>
       <div className="artists-container container-fluid">
-        <img
-          src={Indio}
-          className="artist-Img img-fluid"
-          onClick={() => handleImgClick(Indio)}
-          alt='Carlos "Indio" Solari'
-        />
-        <img
+        <LazyLoadImage
           src={Balta}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Balta)}
           alt=" Baltasar Comotto"
         />
-        <img
+        <LazyLoadImage
           src={Gaspar}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Gaspar)}
           alt="Gaspar Benegas"
         />
-        <img
+        <LazyLoadImage
           src={Titi}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Titi)}
           alt='Cristian "Titi" Lapolla'
         />
-        <img
+        <LazyLoadImage
           src={Bastos}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Bastos)}
           alt="Broder Bastos"
         />
-        <img
-          src={Scaglione2}
+        <LazyLoadImage
+          src={Scaglione}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Scaglione)}
           alt="Luciano Scaglione"
         />
-        <img
+        <LazyLoadImage
+          src={Sbaraglia}
+          className="artist-Img img-fluid"
+          onClick={() => handleImgClick(Sbaraglia)}
+          alt='Carlos "Indio" Solari'
+        />
+        <LazyLoadImage 
           src={Mariel}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Mariel)}
           alt="Mariel Fuertes"
         />
-        <img
+        <LazyLoadImage 
           src={Sotelo}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Sotelo)}
@@ -148,7 +160,7 @@ function SectionArtists() {
           >
             <div className="modalArtist2">
               <h4>{artists[selectedImg]}</h4>
-              <img
+              <LazyLoadImage
                 src={imgModal[selectedImg]}
                 alt=""
                 className="artist-Img2 img-fluid"
@@ -172,12 +184,13 @@ function SectionArtists() {
                 allowfullscreen
               ></iframe>
               <a onClick={() => setShowModal(false)}>
-                <i class="bi bi-x-circle"></i>
+                <i className="bi bi-x-circle"></i>
               </a>
             </div>
           </div>
         )}
       </div>
+      <hr width="100%" className="line" />
     </>
   );
 }

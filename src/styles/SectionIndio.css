@@ -1,0 +1,66 @@
+.sectionIndio-container {
+  display: flex;
+  background-image: url(../images/indiobg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.imagen-indio-cont {
+  flex: 1;
+  display: flex;
+  padding: 30px;
+}
+
+.textIndio-container {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+  position: relative; 
+}
+
+.img-indio {
+	filter: brightness(.6);
+	position: relative;
+	left: 150px;
+	border-radius: 10px;
+}
+
+.textIndio-container h2 {
+	font-size: 3.5em;
+	color: #fff;
+}
+
+.textIndio-container p {
+	color: #fff;
+	font-size: 1.5em;
+}
+
+/** MEDIA QUERIES **/ 
+
+@media screen and (max-width: 540px) {
+	.sectionIndio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.textIndio-container {
+	left: 0;
+	bottom: 0;
+}
+
+.textIndio-container h2 {
+	font-size: 1.8em;
+}
+
+.textIndio-container p {
+	font-size: 1em;
+}
+
+.img-indio {
+	left : 0;
+}
+}
