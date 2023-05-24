@@ -8,7 +8,7 @@ function SectionAbout() {
     <div className="about-container container-fluid">
       <hr width="100%" className="line" />
       <div className="about-container2">
-        <div className="left-about">
+        <div className="left-about" data-aos="fade-up" data-aos-duration="3000">
           <LazyLoadImage
             src={guitars}
             className="guitar-about img-fluid"
