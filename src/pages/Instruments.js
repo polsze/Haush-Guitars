@@ -19,7 +19,7 @@ function Instruments() {
       <div className="container-fluid">
         <div className="container">
           <div className="image">
-            <Link to="/instruments/signature">
+            <Link to="/instruments/baltasarcomotto">
               <LazyLoadImage
                 src={Guitar8}
                 alt="Guitarra Acustica Baltasar Comotto"
