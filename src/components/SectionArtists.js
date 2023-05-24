@@ -2,9 +2,8 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/SectionArtists.css";
-import HaushLogo from "../images/haushlogo1.png";
 import Balta from "../images/baltasarcomottovivo2.png";
-import Gaspar from "../images/gasparbenegas.png";
+import Gaspar from "../images/apai2.png";
 import Titi from "../images/titilapolla.png";
 import Bastos from "../images/bastos.png";
 import Scaglione from "../images/scaglione.png";
@@ -12,10 +11,9 @@ import Sbaraglia from "../images/sbaraglia.png";
 import Mariel from "../images/marielfuertes.png";
 import Sotelo from "../images/marcossotelo1.png";
 import Balta2 from "../images/baltasarcomottovivo3.png";
-import Gaspar2 from "../images/apai2.png";
+import Gaspar2 from "../images/gasparbenegas.png";
 import Titi2 from "../images/titi6.png";
 import Bastos2 from "../images/bastos2.png";
-import Mariel2 from "../images/marielfuertes2.png";
 import Sotelo2 from "../images/sotelo.png";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
@@ -56,7 +54,7 @@ function SectionArtists() {
     [Titi]: Titi2,
     [Bastos]: Bastos2,
     [Scaglione]: Scaglione,
-    [Mariel]: Mariel2,
+    [Mariel]: Mariel,
     [Sotelo]: Sotelo2,
   };
 
@@ -90,14 +88,7 @@ function SectionArtists() {
   return (
     <>
       <div className='title-logo-artist-cont'>
-      <h4 className='artistTitle'>ARTISTAS QUE USAN</h4>
-      <LazyLoadImage  
-            src={HaushLogo} 
-            className="logo img-fluid"
-            alt="Logo de Haush Guitars"
-            width="130"
-            height="40"
-       />
+      <h4 className='artistTitle'>ARTISTAS QUE USAN HAUSH</h4>
        </div>
       <p className="click">Toque en las imagenes para más...</p>
       <div className="artists-container container-fluid">

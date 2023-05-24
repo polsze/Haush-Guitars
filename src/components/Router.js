@@ -38,7 +38,7 @@ export default function Router() {
                 <Route path="/instruments/grasadepez" element={<Grasa />} />
                 <Route path="/instruments/ismini" element={<IndioMini />} />
                 <Route path="/instruments/ubass" element={<Ubass />} />
-                <Route path="/instruments/signature" element={<Signature />} />
+                <Route path="/instruments/baltasarcomotto" element={<Signature />} />
                 <Route path="/contact" element={<Contact />} />
               </Route>
             </Routes>

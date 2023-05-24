@@ -1,15 +1,21 @@
 .footer-container {
+  height: 14vh;
   display: flex;
   align-items: center;
   justify-content: space-around;
   text-align: center;
-  height: auto;
+  background-color: #000;
+}
+
+.logoFooter {
+  margin-top: -10px;
 }
 
 .logo-social-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-top: 10px;
 }
 
 .social-container {

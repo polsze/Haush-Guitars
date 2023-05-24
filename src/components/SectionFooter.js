@@ -8,13 +8,15 @@ function SectionFooter() {
   return (
     <div className="footer-container container-fluid">
       <div className="logo-social-container">
+      <a href="/" className="navbar-brand">
           <LazyLoadImage
             src={haushLogo1}
             className="logoFooter"
             alt="Haush logo"
             width="100"
-            height="70"
+            height="50"
           />
+        </a>
         <div className="social-containerH">
           <Link to="https://www.instagram.com/haushguitars/" target="_BLANK">
             <i className="bi bi-instagram socialLogo"></i>
