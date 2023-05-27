@@ -52,20 +52,7 @@ function Header(props) {
               </Link>
             </li>
           </ul>
-          <div className="social-containerH">
-            <Link to="https://www.instagram.com/haushguitars/" target="_BLANK">
-              <i className="bi bi-instagram socialLogo"></i>
-            </Link>
-            <Link to="https://www.facebook.com/lokustas.sonido" target="_BLANK">
-              <i className="bi bi-facebook socialLogo"></i>
-            </Link>
-            <Link
-              to="https://api.whatsapp.com/send?phone=541537034641"
-              target="_BLANK"
-            >
-              <i className="bi bi-whatsapp socialLogo"></i>
-            </Link>
-          </div>
+          
         </div>
       </nav>
     </div>

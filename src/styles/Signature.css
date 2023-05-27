@@ -61,7 +61,7 @@ h4  {
 
 .modalSignature2 {
   position: relative;
-  width: 50%;
+  width: 40%;
   height: 100%;
   background-image: url(../images/bgModal.png);
   background-color: rgb(30,30,30);
@@ -107,20 +107,6 @@ h4  {
 
 .bi-x-circle {
   transition: 1s;
-  color: yellow;
-}
-
-.bi-x-circle:hover {
-  color: red;
-}
-
-.back-button p{
-  text-align: center;
-  margin-top: 15px;
-}
-
-.bi-x-circle {
-  transition: 1s;
   color: #E8EC09;
 }
 
@@ -131,6 +117,11 @@ h4  {
 .back-button {
   text-align: center;
   font-size: 1.5em;
+}
+
+.back-button p{
+  text-align: center;
+  margin-top: 15px;
 }
 
 

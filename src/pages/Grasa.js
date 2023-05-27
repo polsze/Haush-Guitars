@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import FotoGrasa1 from "../images/grasa1.png";
 import FotoGrasa2 from "../images/grasa2.png";
-import FotoGrasa3 from "../images/grasa3.png";
+import FotoGrasa3 from "../images/grasadepez.png";
 import FotoGrasa4 from "../images/grasa4.png";
 import "../styles/Grasa.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
@@ -108,7 +108,7 @@ function Grasa() {
                   />
 
                   <a onClick={() => setShowModal(false)}>
-                    <i classname="bi bi-x-circle"></i>
+                    <i className="bi bi-x-circle"></i>
                   </a>
                 </div>
               </div>
