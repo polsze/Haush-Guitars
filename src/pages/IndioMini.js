@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import FotoIS1 from "../images/ismini.png";
-import FotoIS2 from "../images/ismini2.png";
-import FotoIS3 from "../images/ismini3.png";
-import FotoIS4 from "../images/ismini4.png";
+import FotoIS1 from "../images/ismini.webp";
+import FotoIS2 from "../images/ismini2.webp";
+import FotoIS3 from "../images/ismini3.webp";
+import FotoIS4 from "../images/ismini4.webp";
 import "../styles/IndioMini.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

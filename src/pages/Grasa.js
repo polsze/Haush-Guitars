@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import FotoGrasa1 from "../images/grasa1.png";
-import FotoGrasa2 from "../images/grasa2.png";
-import FotoGrasa3 from "../images/grasadepez.png";
-import FotoGrasa4 from "../images/grasa4.png";
+import FotoGrasa1 from "../images/grasa1.webp";
+import FotoGrasa2 from "../images/grasa2.webp";
+import FotoGrasa3 from "../images/grasadepez.webp";
+import FotoGrasa4 from "../images/grasa4.webp";
 import "../styles/Grasa.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

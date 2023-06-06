@@ -2,7 +2,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	background-image: url(../images/IS-white.png);
+	background-image: url(../images/IS-white.webp);
 	width: 100%;
 	height: 450px;
 	background-size: contain;
@@ -31,12 +31,14 @@
 	margin-bottom: 15px;
 	font-size: 1.5em;
 	margin-top: 5px;
+	font-family: 'Kaushan Script', cursive;
 }
 
 h5 {
 	text-align: center;
 	font-size: 2.3em;
 	color: #fff;
+	font-family: 'Kaushan Script', cursive;
 }
 
 .textRepairs-container p {
@@ -67,6 +69,7 @@ h5 {
 	.textRepairs-contact {
 		font-size: 1.2em;
 	}
+
 }
 
 @media screen and (max-width: 280px) {

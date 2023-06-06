@@ -2,19 +2,20 @@ import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/SectionArtists.css";
-import Balta from "../images/baltasarcomottovivo2.png";
-import Gaspar from "../images/apai2.png";
-import Titi from "../images/titilapolla.png";
-import Bastos from "../images/bastos.png";
-import Scaglione from "../images/scaglione.png";
-import Sbaraglia from "../images/sbaraglia.png";
-import Mariel from "../images/marielfuertes.png";
-import Sotelo from "../images/marcossotelo1.png";
-import Balta2 from "../images/baltasarcomottovivo3.png";
-import Gaspar2 from "../images/gasparbenegas.png";
-import Titi2 from "../images/titi6.png";
-import Bastos2 from "../images/bastos2.png";
-import Sotelo2 from "../images/sotelo.png";
+import Balta from "../images/baltasarcomottovivo2.webp";
+import Gaspar from "../images/apai2.webp";
+import Titi from "../images/titilapolla.webp";
+import Bastos from "../images/bastos.webp";
+import Scaglione from "../images/scaglione.webp";
+import Sbaraglia from "../images/sbaraglia.webp";
+import Mariel from "../images/marielfuertes.webp";
+import Sotelo from "../images/marcossotelo1.webp";
+import Balta2 from "../images/baltasarcomottovivo3.webp";
+import Gaspar2 from "../images/gasparbenegas.webp";
+import Titi2 from "../images/titi.webp";
+import Bastos2 from "../images/bastos2.webp";
+import Scaglione2 from "../images/scaglione2.webp";
+import Sotelo2 from "../images/sotelo.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
@@ -53,23 +54,23 @@ function SectionArtists() {
     [Gaspar]: Gaspar2,
     [Titi]: Titi2,
     [Bastos]: Bastos2,
-    [Scaglione]: Scaglione,
+    [Scaglione]: Scaglione2,
     [Mariel]: Mariel,
     [Sotelo]: Sotelo2,
   };
 
   const trayectoryModal = {
     [Sbaraglia]: [
-      "Indio Solari Y los Fundamentalistas del Aire Acondicionado",
+      "Indio Solari y los Fundamentalistas del Aire Acondicionado",
     ],
     [Balta]: [
       "Luis Alberto Spinetta",
       "Andrés Calamaro",
-      "Los Fundamentalistas del Aire Acondicionado",
+      "Indio Solari y Los Fundamentalistas del Aire Acondicionado",
     ],
     [Gaspar]: [
       "Las Manos de Filippi",
-      "Los Fundamentalistas del Aire Acondicionado",
+      "Indio Solari y Los Fundamentalistas del Aire Acondicionado",
       "La Mono",
       "El Mister y los Marsupiales Extintos"
     ],
@@ -88,7 +89,7 @@ function SectionArtists() {
   return (
     <>
       <div className='title-logo-artist-cont'>
-      <h4 className='artistTitle'>ARTISTAS QUE USAN HAUSH</h4>
+      <h4 className='artistTitle' data-aos="fade-up" data-aos-duration="3000">ARTISTAS QUE USAN HAUSH</h4>
        </div>
       <p className="click">Toque en las imagenes para más...</p>
       <div className="artists-container container-fluid">
@@ -126,7 +127,7 @@ function SectionArtists() {
           src={Sbaraglia}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Sbaraglia)}
-          alt='Carlos "Indio" Solari'
+          alt='Pablo Sbaraglia'
         />
         <LazyLoadImage 
           src={Mariel}

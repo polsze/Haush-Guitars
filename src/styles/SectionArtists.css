@@ -11,6 +11,7 @@
   color: #fff;
   text-align: center;
   color: rgb(222, 203, 108);
+ font-family: 'Kaushan Script', cursive;
 }
 
 .logo {
@@ -57,7 +58,7 @@
   position: relative;
   width: 50%;
   height: 100%;
-  background-image: url(../images/bgModal.png);
+  background-image: url(../images/bgmodal.webp);
   background-color: rgb(30,30,30);
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
@@ -129,10 +130,7 @@
 }
 
   @media screen and (max-width: 912px) {
-    .artists-container {
-      width: 100%;
-      flex-direction: column;
-  }
+ 
 }
 
 @media screen and (max-width: 820px) {
@@ -140,7 +138,6 @@
   .artist-Img {
   width: 100%;
   height: auto;
-  filter: brightness(.8);
   }
 
  .modalArtist2 {

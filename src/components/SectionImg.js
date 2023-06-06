@@ -1,12 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../styles/SectionImg.css";
-import Guitar1 from "../images/is-carrusel1.png";
-import Guitar2 from "../images/comotto-carrusel1.png";
-import Guitar3 from "../images/grasa-carrusel1.png";
-import Guitar4 from "../images/ms12-carrusel.png";
+import Guitar1 from "../images/is-carrusel1.webp";
+import Guitar2 from "../images/comotto-carrusel1.webp";
+import Guitar3 from "../images/grasa-carrusel1.webp";
+import Guitar4 from "../images/ms12-carrusel.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-
 import Carousel from 'react-bootstrap/Carousel';
 
 function SectionImg() {
@@ -20,6 +19,7 @@ function SectionImg() {
           src={Guitar1}
           alt="Guitarra IS MINI"
         />
+
       </Link>
       </Carousel.Item>
 

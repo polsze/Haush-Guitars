@@ -1,5 +1,5 @@
 .ubassBg-container {
-  background-image: url(../images/ubass-carrusel.png);
+  background-image: url(../images/ubass-carrusel.webp);
   width: 100%;
   height: 90vh;
   background-position: center;
@@ -68,7 +68,7 @@ h3  {
   position: relative;
   width: 40%;
   height: 100%;
-  background-image: url(../images/bgModal.png);
+  background-image: url(../images/bgmodal.webp);
   background-color: rgb(30,30,30);
   background-blend-mode: soft-light;
   background-repeat: no-repeat;

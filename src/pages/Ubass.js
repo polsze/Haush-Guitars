@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import FotoUBass1 from "../images/ubass.png";
-import FotoUBass2 from "../images/ubass3.png";
-import FotoUBass3 from "../images/ubass4.png";
-import FotoUBass4 from "../images/ubass5.png";
+import FotoUBass1 from "../images/ubass.webp";
+import FotoUBass2 from "../images/ubass3.webp";
+import FotoUBass3 from "../images/ubass4.webp";
+import FotoUBass4 from "../images/ubass5.webp";
 import "../styles/Ubass.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import FotoSignature1 from "../images/guitarbaltasarcomotto.png";
-import FotoSignature2 from "../images/guitarbaltasarcomotto2.png";
-import FotoSignature3 from "../images/guitarbaltasarcomotto3.png";
-import FotoSignature4 from "../images/guitarbaltasarcomotto4.png";
+import FotoSignature1 from "../images/guitarbaltasarcomotto.webp";
+import FotoSignature2 from "../images/guitarbaltasarcomotto2.webp";
+import FotoSignature3 from "../images/guitarbaltasarcomotto3.webp";
+import FotoSignature4 from "../images/guitarbaltasarcomotto4.webp";
 import "../styles/Signature.css";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

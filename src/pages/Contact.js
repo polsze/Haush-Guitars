@@ -48,6 +48,7 @@ const Contact = () => {
     onValidate
   );
 
+
   return (
     <>
       <div className="contact-container container-fluid">

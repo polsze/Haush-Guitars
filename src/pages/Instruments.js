@@ -1,10 +1,10 @@
 import React from "react";
 import "../styles/Instruments.css";
-import Guitar6 from "../images/grasadepez.png";
-import Guitar7 from "../images/guitar88.png";
-import Guitar8 from "../images/guitar8.png";
-import Ubass from "../images/ubass6.png";
-import Vector from "../images/indiobg3.png"
+import Guitar6 from "../images/grasadepez.webp";
+import Guitar7 from "../images/guitar88.webp";
+import Guitar8 from "../images/guitar8.webp";
+import Ubass from "../images/ubass6.webp";
+import Vector from "../images/indiobg3.webp"
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 

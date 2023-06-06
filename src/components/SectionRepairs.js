@@ -2,6 +2,8 @@ import React from "react";
 import "../styles/SectionRepairs.css";
 import { Link } from "react-router-dom";
 
+
+
 function SectionRepairs() {
   return (
     <>
@@ -24,6 +26,7 @@ function SectionRepairs() {
         </div>
       </div>
       <hr width="100%" className="line" />
+      
     </>
   );
 }

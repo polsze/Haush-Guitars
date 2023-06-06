@@ -5,6 +5,7 @@
   justify-content: space-around;
   text-align: center;
   background-color: #000;
+  
 }
 
 .logoFooter {
@@ -18,11 +19,11 @@
   margin-top: 10px;
 }
 
-.social-container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: row;
+.social-containerF i {
+  color: rgb(222, 203, 108);
+  margin: 8px;
+  font-size: 1.1em;
+  transition: 1s;
 }
 
 .logo-social-container .social-container {
@@ -46,6 +47,28 @@
   cursor: pointer;
 }
 
+.logos-cont {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.graceful {
+ margin-top: 10px;
+ 
+}
+
+.logos1 {
+  object-fit: contain;
+  padding: 20px;
+}
+
+.credit {
+  text-align: center;
+  font-size: .9em;
+}
+
+
 /** MEDIA QUERIES **/
 
 @media screen and (max-width: 1024px) {
@@ -61,4 +84,20 @@
   .logoFooter {
     margin-left: 12px;
   }
+
+  .logos-cont{
+    margin-left: 0;
+  }
 }
+
+@media screen and (max-width: 540px) {
+  .graceful {
+   margin-top: 10px;
+   margin-bottom: -15px;
+   margin-right: 0;
+
+  }
+
+ 
+}
+

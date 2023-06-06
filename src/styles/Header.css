@@ -54,19 +54,23 @@
 }
 
 .nav-item a:hover {
-	color: rgb(222, 203, 108);
+	color: #FC1F00;
 }
 
+.social-containerH {
+	border-left: 2px solid #FC1F00;
+	margin-left: 10px;
+}
 
 .social-containerH i {
-	color: rgb(222, 203, 108);
+	color: #fff;
 	margin: 8px;
-	font-size: 1.5em;
+	font-size: 1.1em;
 	transition: 1s;
 }
 
 .social-containerH i:hover {
-	color: red;
+	color: #FC1F00;
 }
 
 /** MEDIA QUERIES**/
@@ -75,6 +79,12 @@
 	.nav-item {
 		margin-right: 0;
 		text-align: center;
+	}
+}
+
+@media screen and (max-width: 912px) {
+	.social-containerH {
+		border-left: none;
 	}
 }
 

@@ -1,11 +1,16 @@
 import React from "react";
-import haushLogo1 from "../images/haushlogo1.png";
 import "../styles/SectionFooter.css";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import haushLogo1 from "../images/haushlogo1.webp";
+import Gys from "../images/logo-gys1.webp"
+import Kvk from "../images/kvk-logo.webp"
+import Vecc from "../images/logo-vecc1.webp"
+import Myn from "../images/logo-moyano.webp"
 
 function SectionFooter() {
   return (
+    <>
     <div className="footer-container container-fluid">
       <div className="logo-social-container">
       <a href="/" className="navbar-brand">
@@ -17,7 +22,7 @@ function SectionFooter() {
             height="50"
           />
         </a>
-        <div className="social-containerH">
+        <div className="social-containerF">
           <Link to="https://www.instagram.com/haushguitars/" target="_BLANK">
             <i className="bi bi-instagram socialLogo"></i>
           </Link>
@@ -37,12 +42,42 @@ function SectionFooter() {
       <a href="#">
         <i className="bi bi-arrow-up-circle"></i>
       </a>
+
+      
+
+        <p className='graceful'>
+      Agradecimientos:
+      </p>
+     
+      <div className='logos-cont'>
+     
+      <Link to='http://www.gysbross.com/' target='_BLANK'>
+      <img src={Gys} className='logos1 img-fluid' alt='G&S Logo' />
+      </Link>
+      <Link to='https://www.instagram.com/kvkfotos/' target='_BLANK'>
+      <img src={Kvk} className='logos1 img-fluid' alt='Vecc Logo' />
+      </Link>
+      <Link to='https://www.instagram.com/veccphotography/' target='_BLANK'>
+      <img src={Vecc} className='logos1 img-fluid' alt='KVK Logo' />
+      </Link>
+      <Link to='https://www.instagram.com/mtsrey10/' target='_BLANK'>
+      <img src={Myn} className='logos1 img-fluid' alt='Matías Moyano Logo' />
+      </Link>
+      </div>
+
+    </div>
+    <div className='credit'>
       <p>
         <b>Web Design: </b>
-        Copyright © 2023 Pablo Barrios • Posadas based Freelance Web Designer &
+        <br/>
+        Copyright © 2023 <Link
+            to="https://api.whatsapp.com/send?phone=543765252582"
+            target="_BLANK"
+          >PBX</Link> • Posadas based Freelance Web Designer &
         Developer
       </p>
     </div>
+    </>
   );
 }
 

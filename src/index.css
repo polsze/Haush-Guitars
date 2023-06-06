@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   scroll-behavior: smooth;
   font-family: 'Titillium Web', sans-serif;
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #000;

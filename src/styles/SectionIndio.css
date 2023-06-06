@@ -1,6 +1,6 @@
 .sectionIndio-container {
   display: flex;
-  background-image: url(../images/bgIndio.png);
+  background-image: url(../images/bgIndio.webp);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -17,31 +17,31 @@
   flex-direction: column;
   justify-content: center;
   padding: 0 20px;
-  position: relative; 
+  position: relative;
 }
 
 .img-indio {
 	filter: brightness(.6);
-	position: relative;
-	left: 150px;
+	
 	border-radius: 10px;
 }
 
 .textIndio-container h2 {
 	font-size: 3.5em;
 	color: #fff;
+	font-family: 'Kaushan Script', cursive;
 }
 
 .textIndio-container p {
 	color: #fff;
 	font-size: 1.5em;
+	width: 80%;
 }
 
 /** MEDIA QUERIES **/ 
 
 @media screen and (max-width: 540px) {
 	.sectionIndio-container {
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
