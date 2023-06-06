@@ -32,6 +32,56 @@ function Grasa() {
       </div>
       <div className="grasa-container container-fluid">
         <div className="container">
+          
+          <div className="images-grasa-container">
+            <LazyLoadImage
+              src={FotoGrasa1}
+              className="img-grasa img-fluid"
+              onClick={() => handleImgClick(FotoGrasa1)}
+              alt="Bajo Haush Grasa de Pez"
+            />
+            <LazyLoadImage
+              src={FotoGrasa2}
+              className="img-grasa img-fluid"
+              onClick={() => handleImgClick(FotoGrasa2)}
+              alt="Bajo Haush Grasa de Pez"
+            />
+            <LazyLoadImage
+              src={FotoGrasa3}
+              className="img-grasa img-fluid"
+              onClick={() => handleImgClick(FotoGrasa3)}
+              alt="Bajo Haush Grasa de Pez"
+            />
+            <LazyLoadImage
+              src={FotoGrasa4}
+              className="img-grasa img-fluid"
+              onClick={() => handleImgClick(FotoGrasa4)}
+              alt="Bajo Haush Grasa de Pez"
+            />
+
+            {/* Modal */}
+            {showModal && (
+              <div
+                className="modalGrasa"
+                data-aos="fade-left"
+                data-aos-offset="300"
+                data-aos-duration="2000"
+              >
+                <div className="modalGrasa2">
+                  <LazyLoadImage
+                    src={imgModalGrasa[selectedImg]}
+                    alt=""
+                    className="grasa-Img2 img-fluid"
+                    alt="Bajo Haush Grasa de Pez"
+                  />
+
+                  <a onClick={() => setShowModal(false)}>
+                    <i className="bi bi-x-circle"></i>
+                  </a>
+                </div>
+              </div>
+            )}
+          </div>
           <div className="characteristics">
             <h3>Especificaciones:</h3>
             <ul>
@@ -65,54 +115,6 @@ function Grasa() {
               <li className="features-list">Pickguard cubre tensor: Ébano</li>
               <li className="features-list">Cuerdas: Ernie Ball wood</li>
             </ul>
-          </div>
-          <div className="images-grasa-container">
-            <LazyLoadImage
-              src={FotoGrasa1}
-              className="img-grasa img-fluid"
-              onClick={() => handleImgClick(FotoGrasa1)}
-              alt="Bajo Haush Grasa de Pez"
-            />
-            <LazyLoadImage
-              src={FotoGrasa2}
-              className="img-grasa img-fluid"
-              onClick={() => handleImgClick(FotoGrasa2)}
-              alt="Bajo Haush Grasa de Pez"
-            />
-            <LazyLoadImage
-              src={FotoGrasa3}
-              className="img-grasa img-fluid"
-              onClick={() => handleImgClick(FotoGrasa3)}
-              alt="Bajo Haush Grasa de Pez"
-            />
-            <LazyLoadImage
-              src={FotoGrasa4}
-              className="img-grasa img-fluid"
-              onClick={() => handleImgClick(FotoGrasa4)}
-              alt="Bajo Haush Grasa de Pez"
-            />
-            {/* Modal */}
-            {showModal && (
-              <div
-                className="modalGrasa"
-                data-aos="fade-left"
-                data-aos-offset="300"
-                data-aos-duration="2000"
-              >
-                <div className="modalGrasa2">
-                  <LazyLoadImage
-                    src={imgModalGrasa[selectedImg]}
-                    alt=""
-                    className="grasa-Img2 img-fluid"
-                    alt="Bajo Haush Grasa de Pez"
-                  />
-
-                  <a onClick={() => setShowModal(false)}>
-                    <i className="bi bi-x-circle"></i>
-                  </a>
-                </div>
-              </div>
-            )}
           </div>
         </div>
       </div>
