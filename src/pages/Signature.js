@@ -27,14 +27,14 @@ function Signature() {
   return (
     <>
       <div className="signatureBg-container container-fluid">
-        <h4 data-aos="fade-up" data-aos-duration="3000">
+        <h4 data-aos="zoom-out" data-aos-duration="3000" className="signatureTitle">
           Guitarra acústica Baltasar Comotto
         </h4>
       </div>
       <div className="signature-container container-fluid">
         <div className="container">
           
-          <div className="images-signature-container">
+          <div className="images-signature-container" >
             <LazyLoadImage
               src={FotoSignature1}
               className="img-signature img-fluid"
@@ -70,9 +70,8 @@ function Signature() {
                 <div className="modalSignature2">
                   <LazyLoadImage
                     src={imgModal1[selectedImg]}
-                    alt=""
-                    className="signature-Img2 img-fluid"
                     alt="Guitarra Acustica Baltasar Comotto"
+                    className="signature-Img2 img-fluid"
                   />
 
                   <a onClick={() => setShowModal(false)}>
@@ -82,7 +81,7 @@ function Signature() {
               </div>
             )}
           </div>
-          <div className="characteristics">
+          <div className="characteristics" data-aos="zoom-out" data-aos-duration="2000">
             <h3>Especificaciones:</h3>
             <ul>
               <li className="features-list">Tapa: Caoba maciza</li>
@@ -94,7 +93,7 @@ function Signature() {
               </li>
               <li className="features-list">Diente de perro: Cedro Paraguay</li>
               <li className="features-list">Mango: Cancharana</li>
-              <li className="features-list">Diapason: Ébano</li>
+              <li className="features-list">Diapasón: Ébano</li>
               <li className="features-list">Tapa cabeza: Ébano</li>
               <li className="features-list">Puente: Ébano</li>
               <li className="features-list">
@@ -108,17 +107,17 @@ function Signature() {
               <li className="features-list">Clavijas: Gotoh Japón negras</li>
               <li className="features-list">Cejilla: Nubone (Canadá)</li>
               <li className="features-list">Cejuela puente: Nubone (Canadá)</li>
-              <li className="features-list">Escala: 578 mm</li>
+              <li className="features-list">Escala: 633mm</li>
               <li className="features-list">Trastes holandeses: 2.2 mm</li>
-              <li className="features-list">Terminación: Laca Nitrocelulosa</li>
-              <li className="features-list">Diapasón radio: 12</li>
+              <li className="features-list">Terminación: Nitrocelulosa</li>
+              <li className="features-list">Diapasón radio: 12"</li>
               <li className="features-list">Pickguard cubre tensor: Ébano</li>
               <li className="features-list">Cuerdas: Ernie Ball wood</li>
             </ul>
           </div>
         </div>
       </div>
-      <Link to="/instruments" className="back-button">
+      <Link to="/instrumentos" className="back-button">
         <p>ATRÁS</p>
       </Link>
       <hr width="100%" className="line" />

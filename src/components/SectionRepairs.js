@@ -1,6 +1,8 @@
 import React from "react";
 import "../styles/SectionRepairs.css";
 import { Link } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import asd1 from '../images/guitar-repair.webp'
 
 
 
@@ -8,8 +10,10 @@ function SectionRepairs() {
   return (
     <>
       <div className="repairsBg">
+      <LazyLoadImage src={asd1} alt="" className="guitar-repair img-fluid" />
         <div className="repairs-container container-fluid">
           <div className="listRepairs">
+            
             <h5>Mantenimiento y puesta a punto de instrumentos musicales</h5>
             <ul>
               <li>Reparaciones </li>
@@ -20,7 +24,7 @@ function SectionRepairs() {
             </ul>
             <p className="textRepairs-container">
               Para contactarse utilice el Formulario de{" "}
-              <Link to="/contact">CONTACTO</Link>, WhatsApp, o Redes Sociales.
+              <Link to="/contacto">CONTACTO</Link>, WhatsApp, o Redes Sociales.
             </p>
           </div>
         </div>

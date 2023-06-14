@@ -16,9 +16,9 @@ function SectionAbout() {
           />
         </div>
         <div className="right-about">
-          <h1 className="aboutTitle" data-aos="fade-right" data-aos-duration="3000">Sobre Haush Guitars</h1>
+          <h1 className="aboutTitle" data-aos="zoom-out" data-aos-duration="3000">Haush Guitars</h1>
           <p className="aboutText">
-            Haush Guitars tiene su origen en el año 2015. El luthier Nicolás
+            tiene su origen en el año 2015. El luthier Nicolás
             Barrios tras años de capacitación y formación desarrolló sus
             habilidades calibrando instrumentos de cuerda frotada para orquestas
             juveniles, también estudió construcción de guitarras en la

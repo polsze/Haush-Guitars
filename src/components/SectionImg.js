@@ -13,7 +13,7 @@ function SectionImg() {
     <>
     <Carousel>
       <Carousel.Item interval={4000}>
-      <Link to='/instruments/ismini'>
+      <Link to='/instrumentos/ismini'>
         <LazyLoadImage
           className="d-block w-100"
           src={Guitar1}
@@ -24,7 +24,7 @@ function SectionImg() {
       </Carousel.Item>
 
       <Carousel.Item interval={4000}>
-      <Link to='/instruments/baltasarcomotto'>
+      <Link to='/instrumentos/baltasarcomotto'>
         <LazyLoadImage
           className="d-block w-100"
           src={Guitar2}
@@ -34,7 +34,7 @@ function SectionImg() {
       </Carousel.Item>
 
       <Carousel.Item interval={4000}>
-      <Link to='/instruments/grasadepez'>
+      <Link to='/instrumentos/grasadepez'>
         <LazyLoadImage
           className="d-block w-100"
           src={Guitar3}

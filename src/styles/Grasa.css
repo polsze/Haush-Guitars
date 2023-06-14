@@ -8,7 +8,8 @@
   background-color: rgb(40,40,40);
   background-blend-mode: soft-light;
   display: flex;
-  align-items: center;
+  align-items: end;
+  justify-content: center;
 }
 
 .grasa-container {
@@ -96,7 +97,7 @@
 
 @media screen and (max-width: 540px) {
   .grasaBg-container {
-     height: 40vh;
+     height: 50vh;
   }
 
   .modalGrasa2{

@@ -3,6 +3,7 @@
   background-image: url(../images/bgIndio.webp);
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .imagen-indio-cont {
@@ -29,7 +30,7 @@
 .textIndio-container h2 {
 	font-size: 3.5em;
 	color: #fff;
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Russo One', sans-serif;
 }
 
 .textIndio-container p {
@@ -62,5 +63,6 @@
 
 .img-indio {
 	left : 0;
+  
 }
 }

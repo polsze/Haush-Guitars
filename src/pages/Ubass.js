@@ -25,13 +25,13 @@ function Ubass() {
   return (
     <>
       <div className="ubassBg-container container-fluid">
-        <h4 className="title-ins" data-aos="fade-up" data-aos-duration="3000">
+        <h4 className="signatureTitle" data-aos="zoom-out" data-aos-duration="3000">
           Bajo acústico U-Bass
         </h4>
       </div>
       <div className="ubass-container container-fluid">
         <div className="container">
-          
+
           <div className="images-ubass-container">
             <LazyLoadImage
               src={FotoUBass1}
@@ -68,9 +68,8 @@ function Ubass() {
                 <div className="modalUbass2">
                   <LazyLoadImage
                     src={imgModalUbass[selectedImg]}
-                    alt=""
-                    className="ubass-Img2 img-fluid"
                     alt="Bajo Acustico U-Bass"
+                    className="ubass-Img2 img-fluid"
                   />
 
                   <a onClick={() => setShowModal(false)}>
@@ -80,43 +79,43 @@ function Ubass() {
               </div>
             )}
           </div>
-          <div className="characteristics">
+          <div className="characteristics" data-aos="zoom-out" data-aos-duration="2000">
             <h3>Especificaciones:</h3>
             <ul>
-              <li className="features-list">Tapa: Caoba maciza</li>
-              <li className="features-list">Aros: Caoba maciza</li>
-              <li className="features-list">Fondo: Caoba maciza</li>
-              <li className="features-list">Barras armonicas: Pino Abeto</li>
+              <li className="features-list">Tapa: Abeto </li>
+              <li className="features-list">Aros: Nogal macizo</li>
+              <li className="features-list">Fondo: Nogal macizo</li>
+              <li className="features-list">Barras armonicas: Abeto</li>
               <li className="features-list">
                 Barras de estructura del fondo: Cedro Paraguay
               </li>
-              <li className="features-list">Diente de perro: Cedro Paraguay</li>
               <li className="features-list">Mango: Cancharana</li>
-              <li className="features-list">Diapason: Ébano</li>
-              <li className="features-list">Tapa cabeza: Ébano</li>
-              <li className="features-list">Puente: Ébano</li>
+              <li className="features-list">Diapasón: Ébano</li>
+              <li className="features-list">Tapa cabeza: Pau Ferro</li>
+              <li className="features-list">Puente: Pau Ferro</li>
               <li className="features-list">
-                Detalles debajo del mango (zoque) y atrás del cuerpo: Ébano
+                Detalles debajo del mango (zoque): Ébano
               </li>
               <li className="features-list">
-                Incrustaciones en pala, diapasón y pickguard: Sicomoro
+                Incrustaciones: Sicomoro
               </li>
               <li className="features-list">Pickguard: Ébano</li>
               <li className="features-list">Tensor: doble acción</li>
-              <li className="features-list">Clavijas: Gotoh Japón negras</li>
+              <li className="features-list">U-Bass 2+2 Negras</li>
               <li className="features-list">Cejilla: Nubone (Canadá)</li>
-              <li className="features-list">Cejuela puente: Nubone (Canadá)</li>
+              <li className="features-list">Cejuela: Nubone (Canadá)</li>
               <li className="features-list">Escala: 578 mm</li>
-              <li className="features-list">Trastes holandeses: 2.2 mm</li>
-              <li className="features-list">Terminación: Laca Nitrocelulosa</li>
-              <li className="features-list">Diapasón radio: 12</li>
+              <li className="features-list">Trastes holandeses: 2 mm</li>
+              <li className="features-list">Terminación: Nitrocelulosa</li>
+              <li className="features-list">Diapasón radio: 12"</li>
               <li className="features-list">Pickguard cubre tensor: Ébano</li>
               <li className="features-list">Cuerdas: Ernie Ball wood</li>
+              <li className="features-list">Pre: Fishman</li>
             </ul>
           </div>
         </div>
       </div>
-      <Link to="/instruments" className="back-button">
+      <Link to="/instrumentos" className="back-button">
         <p>ATRÁS</p>
       </Link>
       <hr width="100%" className="line" />

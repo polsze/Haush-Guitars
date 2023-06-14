@@ -6,21 +6,21 @@ import Guitar8 from "../images/guitar8.webp";
 import Ubass from "../images/ubass6.webp";
 import Vector from "../images/indiobg3.webp"
 import { Link } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 function Instruments() {
   return (
     <>
       <div className="instrumentsBg-container">
-        <h2 className='instruments-title' data-aos="fade-up" data-aos-duration="3000">
-          INSTRUMENTS
+        <h2 className='instruments-title-h2' data-aos="zoom-out-up" data-aos-duration="3000">
+          INSTRUMENTOS
         </h2>
       </div>
       <div className="container-fluid">
         <div className="container">
           <div className="image">
-            <Link to="/instruments/baltasarcomotto">
-              <LazyLoadImage
+            <Link to="/instrumentos/baltasarcomotto">
+              <img
                 src={Guitar8}
                 alt="Guitarra Acustica Baltasar Comotto"
                 className="guitar6"
@@ -28,20 +28,20 @@ function Instruments() {
             </Link>
           </div>
           <div className="characteristics">
-            <h4 className='instruments-title'>Guitarra Acústica Baltasar Comotto</h4>
+          <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title' data-aos="zoom-out" data-aos-duration="3000">Guitarra Acústica Baltasar Comotto</h4></Link>
             <p className="instruments-text">
               La guitarra acústica Baltasar Comotto fue diseñada justamente por el artista en cuestión. La
               idea fue construir un modelo sobrio, cómodo para ejecutar con
               buenos graves, medios y agudos, dándole estabilidad y cuerpo al
               sonido. <b>Haga click en la imagen para ver más...</b>
             </p>
-            <LazyLoadImage src={Vector} className='vector img-fluid' />
+            <img src={Vector} className='vector img-fluid'/>
           </div>
         </div>
         <div className="container">
           <div className="image">
-            <Link to="/instruments/ismini">
-              <LazyLoadImage
+            <Link to="/instrumentos/ismini">
+              <img
                 src={Guitar7}
                 alt="Guitarra Acustica IS MINI"
                 className="guitar6"
@@ -49,7 +49,7 @@ function Instruments() {
             </Link>
           </div>
           <div className="characteristics">
-            <h4 className='instruments-title'>Guitarra Acústica IS Mini</h4>
+          <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title'>Guitarra Acústica IS Mini</h4></Link>
             <p className="instruments-text">
               La guitarra acústica IS mini fue ideada junto con Gaspar Benegas.
               Se buscó reducir la escala y el tamaño del cuerpo sin perder calidad
@@ -57,14 +57,14 @@ function Instruments() {
               Es ideal para llevar de viaje por su tamaño de 83cm de largo
               total. <b>Haga click en la imagen para ver más...</b>
             </p>
-            <LazyLoadImage src={Vector} className='vector img-fluid' />
+            <img src={Vector} className='vector img-fluid' />
           </div>
         </div>
 
         <div className="container">
           <div className="image">
-            <Link to="/instruments/grasadepez">
-              <LazyLoadImage
+            <Link to="/instrumentos/grasadepez">
+              <img
                 src={Guitar6}
                 alt="Bajo Acustico Grasa de Pez"
                 className="guitar6"
@@ -72,7 +72,7 @@ function Instruments() {
             </Link>
           </div>
           <div className="characteristics">
-            <h4 className='instruments-title'>Bajo Acústico Grasa de Pez</h4>
+          <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title'>Bajo Acústico Grasa de Pez</h4></Link>
             <p className="instruments-text">
               El Bajo acústico Grasa de Pez fue diseñado para el bajista Cristian
               "Titi" Lapolla. Se buscó en reducir un poco el tamaño del cuerpo
@@ -81,17 +81,17 @@ function Instruments() {
               la ejecución de las notas más agudas. Buenos graves y medios.{" "}
               <b>Haga click en la imagen para ver más...</b>
             </p>
-            <LazyLoadImage src={Vector} className='vector vector img-fluid' />
+            <img src={Vector} className='vector vector img-fluid' />
           </div>
         </div>
         <div className="container">
           <div className="image">
-            <Link to="/instruments/ubass">
-              <LazyLoadImage src={Ubass} alt="Bajo Acustico U-Bass" className="guitar6" />
+            <Link to="/instrumentos/ubass">
+              <img src={Ubass} alt="Bajo Acustico U-Bass" className="guitar6" />
             </Link>
           </div>
           <div className="characteristics">
-            <h4 className="instruments-title">Bajo Acústico U-Bass</h4>
+          <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title'>Bajo Acústico U-Bass</h4></Link>
             <p className="instruments-text">
               El U-bass o Uke-Bass acústico fue diseñado junto con Broder Bastos. Se
               construyó con cuerdas de caucho que son más suave de tocar que a su vez
@@ -99,7 +99,7 @@ function Instruments() {
               usarlo tanto en salas de ensayos, estudios o shows en vivo.{" "}
               <b>Haga click en la imagen para ver más...</b>
             </p>
-            <LazyLoadImage src={Vector} className='vector img-fluid' />
+            <img src={Vector} className='vector img-fluid' />
           </div>
         </div>
         <hr width="100%" className="line" />

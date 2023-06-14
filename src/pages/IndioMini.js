@@ -25,7 +25,7 @@ function IndioMini() {
   return (
     <>
       <div className="indioBg-container container-fluid">
-        <h4 className="title-ins" data-aos="fade-up" data-aos-duration="3000">
+        <h4 data-aos="zoom-out" data-aos-duration="3000" className="signatureTitle">
           Guitarra acústica IS Mini
         </h4>
       </div>
@@ -68,7 +68,6 @@ function IndioMini() {
                 <div className="modalIS2">
                   <LazyLoadImage 
                     src={imgModalIS[selectedImg]}
-                    alt=""
                     className="is-Img2 img-fluid"
                     alt="Guitarra Acustica Haush IS MINI"
                   />
@@ -79,7 +78,7 @@ function IndioMini() {
               </div>
             )}
           </div>
-          <div className="characteristics">
+          <div className="characteristics" data-aos="zoom-out" data-aos-duration="2000">
             <h3>Especificaciones:</h3>
             <ul>
               <li className="features-list">Tapa: Caoba maciza</li>
@@ -107,15 +106,15 @@ function IndioMini() {
               <li className="features-list">Cejuela puente: Nubone (Canadá)</li>
               <li className="features-list">Escala: 578 mm</li>
               <li className="features-list">Trastes holandeses: 2.2 mm</li>
-              <li className="features-list">Terminación: Laca Nitrocelulosa</li>
-              <li className="features-list">Diapasón radio: 12</li>
+              <li className="features-list">Terminación: Nitrocelulosa</li>
+              <li className="features-list">Diapasón radio: 12"</li>
               <li className="features-list">Pickguard cubre tensor: Ébano</li>
               <li className="features-list">Cuerdas: Ernie Ball wood</li>
             </ul>
           </div>
         </div>
       </div>
-      <Link to="/instruments" className="back-button">
+      <Link to="/instrumentos" className="back-button">
         <p>ATRÁS</p>
       </Link>
       <hr width="100%" className="line" />

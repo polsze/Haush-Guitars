@@ -26,7 +26,7 @@ function Grasa() {
   return (
     <>
       <div className="grasaBg-container container-fluid">
-        <h4 data-aos="fade-up" data-aos-duration="3000">
+        <h4 data-aos="zoom-out" data-aos-duration="3000" className="signatureTitle">
           Bajo acústico Grasa de Pez
         </h4>
       </div>
@@ -70,7 +70,6 @@ function Grasa() {
                 <div className="modalGrasa2">
                   <LazyLoadImage
                     src={imgModalGrasa[selectedImg]}
-                    alt=""
                     className="grasa-Img2 img-fluid"
                     alt="Bajo Haush Grasa de Pez"
                   />
@@ -82,43 +81,40 @@ function Grasa() {
               </div>
             )}
           </div>
-          <div className="characteristics">
+          <div className="characteristics" data-aos="zoom-out" data-aos-duration="2000">
             <h3>Especificaciones:</h3>
             <ul>
-              <li className="features-list">Tapa: Caoba maciza</li>
-              <li className="features-list">Aros: Caoba maciza</li>
-              <li className="features-list">Fondo: Caoba maciza</li>
+              <li className="features-list">Tapa: Guayubira</li>
+              <li className="features-list">Aros: Algarrobo macizo</li>
+              <li className="features-list">Fondo: Algarrobo macizo</li>
               <li className="features-list">Barras armonicas: Pino Abeto</li>
               <li className="features-list">
                 Barras de estructura del fondo: Cedro Paraguay
               </li>
               <li className="features-list">Diente de perro: Cedro Paraguay</li>
               <li className="features-list">Mango: Cancharana</li>
-              <li className="features-list">Diapason: Ébano</li>
-              <li className="features-list">Tapa cabeza: Ébano</li>
-              <li className="features-list">Puente: Ébano</li>
-              <li className="features-list">
-                Detalles debajo del mango (zoque) y atrás del cuerpo: Ébano
-              </li>
-              <li className="features-list">
-                Incrustaciones en pala, diapasón y pickguard: Sicomoro
-              </li>
+              <li className="features-list">Diapasón: Pau Ferro</li>
+              <li className="features-list">Tapa cabeza: Guayubira</li>
+              <li className="features-list">Puente: Guayubira</li>
+              <li className="features-list">Detalles debajo del mango (zoque): Ébano</li>
+              <li className="features-list">Incrustaciones: Sicomoro</li>
               <li className="features-list">Pickguard: Ébano</li>
               <li className="features-list">Tensor: doble acción</li>
-              <li className="features-list">Clavijas: Gotoh Japón negras</li>
+              <li className="features-list">Clavijas: Gotoh Japón</li>
               <li className="features-list">Cejilla: Nubone (Canadá)</li>
-              <li className="features-list">Cejuela puente: Nubone (Canadá)</li>
-              <li className="features-list">Escala: 578 mm</li>
-              <li className="features-list">Trastes holandeses: 2.2 mm</li>
-              <li className="features-list">Terminación: Laca Nitrocelulosa</li>
-              <li className="features-list">Diapasón radio: 12</li>
+              <li className="features-list">Cejuela: Nubone</li>
+              <li className="features-list">Escala: 34"</li>
+              <li className="features-list">Trastes holandeses 2.5mm</li>
+              <li className="features-list">Terminación: Nitrocelulosa</li>
+              <li className="features-list">Diapasón radio: 12"</li>
               <li className="features-list">Pickguard cubre tensor: Ébano</li>
               <li className="features-list">Cuerdas: Ernie Ball wood</li>
+              <li className="features-list">Micrófono: Mazzarino</li>
             </ul>
           </div>
         </div>
       </div>
-      <Link to="/instruments" className="back-button">
+      <Link to="/instrumentos" className="back-button">
         <p>ATRÁS</p>
       </Link>
       <hr width="100%" className="line" />

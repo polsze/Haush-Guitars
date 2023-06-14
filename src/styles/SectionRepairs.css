@@ -7,7 +7,7 @@
 	height: 450px;
 	background-size: contain;
 	background-repeat: no-repeat;
-	background-position: top left 88%;
+	background-position: top right 97%;
 }
 
 .repairs-container {
@@ -15,7 +15,12 @@
 	color: #fff;
 }
 
+.guitar-repair {
+width: 330px;
+position: absolute;
+right: 20px;
 
+}
 
 .listRepairs ul {
 	display: flex;
@@ -31,14 +36,14 @@
 	margin-bottom: 15px;
 	font-size: 1.5em;
 	margin-top: 5px;
-	font-family: 'Kaushan Script', cursive;
+	
 }
 
 h5 {
 	text-align: center;
 	font-size: 2.3em;
 	color: #fff;
-	font-family: 'Kaushan Script', cursive;
+	font-family: 'Russo One', sans-serif;
 }
 
 .textRepairs-container p {
@@ -52,6 +57,10 @@ h5 {
 /** MEDIA QUERIES **/
 
 @media screen and (max-width: 540px) {
+
+	.guitar-repair {
+		display: none;
+	}
 
 	.repairsBg {
 		background-position: 50%;

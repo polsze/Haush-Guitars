@@ -19,15 +19,17 @@
  text-align: center;
  font-size: 4em;
  color: #fff;
- font-family: 'Kaushan Script', cursive;
+ font-family: 'Russo One', sans-serif;
 }
 
 .aboutText {
   width: 70%;
   color:#fff;
   font-size: 1.2em;
-  font-family: 'Titillium Web', sans-serif;
   text-align: start;
+  font-family: 'Exo 2', sans-serif;
+
+
 }
 
 .line {

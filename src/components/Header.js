@@ -4,6 +4,9 @@ import HaushLogo from "../images/haushlogo1.webp";
 import Contact from "../pages/Contact";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
+import Instagram from '../images/instagram.webp'
+import Facebook from '../images/facebook.webp'
+import Whatsapp from '../images/whatsapp.webp'
 
 
 function Header(props) {
@@ -42,32 +45,40 @@ function Header(props) {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/instruments">
+              <Link className="nav-link" to="/instrumentos">
                 Instrumentos
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact">
+              <Link className="nav-link" to="/sobrenosotros">
+                Sobre Nosotros
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/contacto">
                 Contacto
               </Link>
             </li>
           </ul>
-           <div className="social-containerH">
-          <Link to="https://www.instagram.com/haushguitars/" target="_BLANK">
-            <i className="bi bi-instagram socialLogo"></i>
-          </Link>
-          <Link to="https://www.facebook.com/lokustas.sonido" target="_BLANK">
-            <i className="bi bi-facebook socialLogo"></i>
-          </Link>
-          <Link
-            to="https://api.whatsapp.com/send?phone=541537034641"
-            target="_BLANK"
-          >
-            <i className="bi bi-whatsapp socialLogo"></i>
-          </Link>
+          <div className="social-containerH">
+            <Link to="https://www.instagram.com/haushguitars/" target="_BLANK">
+              <LazyLoadImage src={Instagram} className='red-logo img-fluid' alt='Instagram' />
+            </Link>
+
+            <Link to="https://www.facebook.com/lokustas.sonido" target="_BLANK">
+              <LazyLoadImage src={Facebook} className='red-logo1 img-fluid' alt='Instagram' />
+            </Link>
+            <Link
+              to="https://api.whatsapp.com/send?phone=541537034641"
+              target="_BLANK"
+            >
+              <LazyLoadImage src={Whatsapp} className='red-logo2 img-fluid' alt='Instagram' />
+            </Link>
+          </div>
         </div>
-        </div>
+
       </nav>
+
     </div>
   );
 }

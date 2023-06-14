@@ -8,11 +8,6 @@
   
 }
 
-.logoFooter {
-  margin: auto;
-
-}
-
 .logo-social-container {
   display: flex;
   flex-direction: column;
@@ -22,13 +17,16 @@
 
 .social-containerF i {
   color: rgb(222, 203, 108);
-  margin: 12.5px;
+  margin: 8px;
   font-size: 1.1em;
   transition: 1s;
 }
 
-.logo-social-container .social-container {
+.logo-social-container {
   margin-top: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-container p {
@@ -51,12 +49,10 @@
 .logos-cont {
   display: flex;
   flex-direction: row;
-  
 }
 
 .graceful {
  margin-top: 10px;
- 
 }
 
 .logos1 {
@@ -83,7 +79,6 @@
   }
 
   .logoFooter {
-    margin-left: 12px;
   }
 
   .logos-cont{
@@ -92,13 +87,23 @@
 }
 
 @media screen and (max-width: 540px) {
+  .logoFooter {
+    
+  }
+  .social-containerF {
+   
+  }
+  .social-containerF i { 
+    margin: 12.5px;
+    
+  }
+
   .graceful {
    margin-top: 10px;
    margin-bottom: -15px;
    margin-right: 0;
-
   }
-
+  
  
 }
 

@@ -1,11 +1,8 @@
 import Header from "../components/Header";
-import SectionImg from "../components/SectionImg";
-import SectionArtists from "../components/SectionArtists";
-import SectionAbout from "../components/SectionAbout";
-import SectionRepairs from "../components/SectionRepairs";
 import SectionFooter from "../components/SectionFooter";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router-dom";
 import Contact from "../pages/Contact";
+import About from "../pages/About";
 import Home from "../pages/Home";
 import Instruments from "../pages/Instruments";
 import Grasa from "../pages/Grasa";
@@ -13,11 +10,14 @@ import IndioMini from "../pages/IndioMini";
 import Ubass from "../pages/Ubass";
 import Signature from "../pages/Signature";
 import SmoothScroll from "../components/SmoothScroll.js";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
+
+
 
 export default function Router() {
   const Layout = () => {
     return (
+
       <>
         <Header />
         <Outlet />
@@ -34,12 +34,13 @@ export default function Router() {
             <Routes>
               <Route path="/" element={<Layout />}>
                 <Route path="/" element={<Home />} />
-                <Route path="/instruments" element={<Instruments />} />
-                <Route path="/instruments/grasadepez" element={<Grasa />} />
-                <Route path="/instruments/ismini" element={<IndioMini />} />
-                <Route path="/instruments/ubass" element={<Ubass />} />
-                <Route path="/instruments/baltasarcomotto" element={<Signature />} />
-                <Route path="/contact" element={<Contact />} />
+                <Route path="/instrumentos" element={<Instruments />} />
+                <Route path="/instrumentos/grasadepez" element={<Grasa />} />
+                <Route path="/instrumentos/ismini" element={<IndioMini />} />
+                <Route path="/instrumentos/ubass" element={<Ubass />} />
+                <Route path="/instrumentos/baltasarcomotto" element={<Signature />} />
+                <Route path="/contacto" element={<Contact />} />
+                <Route path="/sobrenosotros" element={<About />} />
               </Route>
             </Routes>
           </SmoothScroll>

@@ -1,6 +1,5 @@
 import React from "react";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 import "../styles/SectionArtists.css";
 import Balta from "../images/baltasarcomottovivo2.webp";
 import Gaspar from "../images/apai2.webp";
@@ -27,7 +26,7 @@ function SectionArtists() {
   const [selectedImg, setSelectedImg] = useState("");
 
   const artists = {
-    [Sbaraglia]: "Carlos Solari",
+    [Sbaraglia]: "Pablo Sbaraglia",
     [Balta]: "Baltasar Comotto",
     [Gaspar]: "Gaspar Benegas",
     [Titi]: 'Cristian "Titi" Lapolla',
@@ -154,9 +153,8 @@ function SectionArtists() {
               <h4>{artists[selectedImg]}</h4>
               <LazyLoadImage
                 src={imgModal[selectedImg]}
-                alt=""
                 className="artist-Img2 img-fluid"
-                alt="Imagel del modal"
+                alt="Imagen del modal"
               />
               <ul>
                 <h6 className="titleTrayectory">Trayectoria:</h6>

@@ -35,22 +35,24 @@ function SectionFooter() {
           >
             <i className="bi bi-whatsapp socialLogo"></i>
           </Link>
+          
         </div>
+        <h6>Haush Guitars™ All Rights Reserved.</h6>
       </div>
-      <h6>Haush Guitars™ All Rights Reserved.</h6>
-      <Link to="/contact">CONTACTO</Link>
+      
+      <Link to="/contacto">CONTACTO</Link>
       <a href="#">
         <i className="bi bi-arrow-up-circle"></i>
       </a>
 
       
 
-        <p className='graceful'>
+       
+      <p className='graceful'>
       Agradecimientos:
       </p>
-     
       <div className='logos-cont'>
-     
+      
       <Link to='http://www.gysbross.com/' target='_BLANK'>
       <img src={Gys} className='logos1 img-fluid' alt='G&S Logo' />
       </Link>
@@ -64,8 +66,9 @@ function SectionFooter() {
       <img src={Myn} className='logos1 img-fluid' alt='Matías Moyano Logo' />
       </Link>
       </div>
-
+      
     </div>
+   
     <div className='credit'>
       <p>
         <b>Web Design: </b>
