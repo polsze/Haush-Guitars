@@ -23,19 +23,19 @@ function Instruments() {
               <img
                 src={Guitar8}
                 alt="Guitarra Acustica Baltasar Comotto"
-                className="guitar6"
+                className="guitar6 animate-bg"
               />
             </Link>
           </div>
           <div className="characteristics">
-          <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title' data-aos="zoom-out" data-aos-duration="3000">Guitarra Acústica Baltasar Comotto</h4></Link>
+          <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title'>Guitarra Acústica Baltasar Comotto</h4></Link>
             <p className="instruments-text">
               La guitarra acústica Baltasar Comotto fue diseñada justamente por el artista en cuestión. La
               idea fue construir un modelo sobrio, cómodo para ejecutar con
               buenos graves, medios y agudos, dándole estabilidad y cuerpo al
-              sonido. <b>Haga click en la imagen para ver más...</b>
+              sonido.
             </p>
-            <img src={Vector} className='vector img-fluid'/>
+            
           </div>
         </div>
         <div className="container">
@@ -55,9 +55,9 @@ function Instruments() {
               Se buscó reducir la escala y el tamaño del cuerpo sin perder calidad
               sonora. Se hizo encapié en resaltar detalles en su construcción. 
               Es ideal para llevar de viaje por su tamaño de 83cm de largo
-              total. <b>Haga click en la imagen para ver más...</b>
+              total.
             </p>
-            <img src={Vector} className='vector img-fluid' />
+            
           </div>
         </div>
 
@@ -78,10 +78,9 @@ function Instruments() {
               "Titi" Lapolla. Se buscó en reducir un poco el tamaño del cuerpo
               sin perder volumen y calidad sonora. Tiene un Mic en la boca para
               poder usarlo en estudios o shows en vivo. El cuteway favorece en
-              la ejecución de las notas más agudas. Buenos graves y medios.{" "}
-              <b>Haga click en la imagen para ver más...</b>
+              la ejecución de las notas más agudas. Buenos graves y medios.
             </p>
-            <img src={Vector} className='vector vector img-fluid' />
+            
           </div>
         </div>
         <div className="container">
@@ -96,10 +95,9 @@ function Instruments() {
               El U-bass o Uke-Bass acústico fue diseñado junto con Broder Bastos. Se
               construyó con cuerdas de caucho que son más suave de tocar que a su vez
               brindan un sonido similar a un contrabajo. Tiene un PRE para poder
-              usarlo tanto en salas de ensayos, estudios o shows en vivo.{" "}
-              <b>Haga click en la imagen para ver más...</b>
+              usarlo tanto en salas de ensayos, estudios o shows en vivo.
             </p>
-            <img src={Vector} className='vector img-fluid' />
+            
           </div>
         </div>
         <hr width="100%" className="line" />

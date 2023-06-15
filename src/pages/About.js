@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/SectionAbout.css";
 import guitars from "../images/claybass.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+
 
 function SectionAbout() {
   return (
@@ -9,7 +9,7 @@ function SectionAbout() {
       <hr width="100%" className="line" />
       <div className="about-container2">
         <div className="left-about">
-          <LazyLoadImage
+          <img
             src={guitars}
             className="guitar-about img-fluid"
             alt="Bajo de Haush Guitars"

@@ -11,7 +11,7 @@ import Myn from "../images/logo-moyano.webp"
 function SectionFooter() {
   return (
     <>
-    <div className="footer-container container-fluid">
+    <div className="footer-container">
       <div className="logo-social-container">
       <a href="/" className="navbar-brand">
           <LazyLoadImage

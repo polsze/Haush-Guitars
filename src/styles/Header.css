@@ -56,7 +56,7 @@
 
 .social-containerH {
 	display: flex;
-	border-left: 2px solid #FC1F00;
+	border-left: 2px solid #958F8F;
 	padding-left: 48px;
 	height: auto;
 	align-items: center;
@@ -65,16 +65,29 @@
 
 .red-logo {
 	width: 30px;
+	transition: 1s;
 }
-
+.red-logo:hover {
+	transform: scale(1.1);
+}
 .red-logo1 {
 	margin-left: 15px;
 	width: 30px;
+	transition: 1s;
+}
+
+.red-logo1:hover {
+	transform: scale(1.1);
 }
 
 .red-logo2 {
 	margin-left: 15px;
 	width: 30px;
+	transition: 1s;
+}
+
+.red-logo2:hover {
+	transform: scale(1.1);
 }
 
 /** MEDIA QUERIES**/

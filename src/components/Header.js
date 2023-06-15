@@ -1,7 +1,6 @@
 import React from "react";
 import "../styles/Header.css";
 import HaushLogo from "../images/haushlogo1.webp";
-import Contact from "../pages/Contact";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Instagram from '../images/instagram.webp'
@@ -12,7 +11,7 @@ import Whatsapp from '../images/whatsapp.webp'
 function Header(props) {
 
   return (
-    <div className="header-container container-fluid">
+    <div className="header-container">
       <nav className="navbar navbar-expand-lg">
         <div className="logo-container">
           <a href="/" className="navbar-brand">
@@ -62,17 +61,17 @@ function Header(props) {
           </ul>
           <div className="social-containerH">
             <Link to="https://www.instagram.com/haushguitars/" target="_BLANK">
-              <LazyLoadImage src={Instagram} className='red-logo img-fluid' alt='Instagram' />
+              <img src={Instagram} className='red-logo img-fluid' alt='Instagram' />
             </Link>
 
             <Link to="https://www.facebook.com/lokustas.sonido" target="_BLANK">
-              <LazyLoadImage src={Facebook} className='red-logo1 img-fluid' alt='Instagram' />
+              <img src={Facebook} className='red-logo1 img-fluid' alt='Instagram' />
             </Link>
             <Link
               to="https://api.whatsapp.com/send?phone=541537034641"
               target="_BLANK"
             >
-              <LazyLoadImage src={Whatsapp} className='red-logo2 img-fluid' alt='Instagram' />
+              <img src={Whatsapp} className='red-logo2 img-fluid' alt='Instagram' />
             </Link>
           </div>
         </div>

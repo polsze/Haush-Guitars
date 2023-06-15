@@ -3,18 +3,19 @@
   height: 85vh;
   background-image: url(../images/instrumentsBg.webp);
   background-position: center bottom 20%;
-  background-repeat: no-repeat;
   background-size: cover;
   background-color: rgb(40,40,40);
   background-blend-mode: soft-light;
   display: flex;
   align-items: center;
+
 }
 
 .container {
   display: flex;
   align-items: center;
   margin-top: 30px;
+ 
 }
 
 .guitar6 {
@@ -22,6 +23,19 @@
   height: auto;
   object-fit: contain;
   margin-bottom: 25px;
+  border-style: solid;
+  border-width: 3px;
+  border-image: linear-gradient(cyan, violet) 1;
+  animation: 1s newBorder infinite alternate;
+}
+
+@keyframes newBorder {
+  0%{
+    border-image: linear-gradient(violet, cyan) 1;
+  }
+  100% {
+    border-image: linear-gradient( cyan , violet) 3;
+  }
 }
 
 .characteristics {
@@ -30,7 +44,7 @@
 }
 
 .instruments-text {
-  color: rgb(222, 203, 108);
+  color: #A3A0A0;
   font-size: 1.2em;
 }
 
@@ -40,7 +54,6 @@
   font-size: 4em;
   color: #fff;
   font-family: 'Russo One', sans-serif;
-  
  }
 
 
@@ -52,17 +65,17 @@
   margin-top: 15px;
   color: #fff;
   font-family: 'Russo One', sans-serif; 
+  transition: 1.5s;
+}
+
+.instruments-title:hover {
+  color: #FC1F00;
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-b {
-  color: #857F7D;
-  font-size: .85em;
 }
 
 /** MEDIA QUERIES **/
@@ -72,6 +85,13 @@ b {
     height: 55vh;
   }
 
+  .vector {
+    display: none;
+  }
+
+  .guitar6{
+    border-width: 2px;
+  }
   .container {
     flex-direction: column;
     flex-wrap: wrap;
@@ -96,4 +116,37 @@ b {
     
     font-size: 1.3em;
   }
+}
+
+
+.animate-bg:before, .animate-bg:after {
+	content: '';
+	position: absolute;
+	left: -8px;
+	top: -8px;
+	background: linear-gradient(120deg, #79fb00, #8d01a0, #031ba5,#ff004c,  
+	#e6036d, #fb0094,#ff6600, #04c2e4,#adad02, #00c3ff);
+	background-size: 300%;
+	width: calc(100% + 16px);
+	height: calc(100% + 16px);
+	z-index: -1;
+	animation: BGgradient 15s ease infinite; 
+}
+
+@keyframes BGgradient {
+	0% {
+		background-position: 0% 200%;
+	}
+	50% {
+		background-position: 200% 0%;
+	}
+	100% {
+		background-position: 0% 330%;
+	}
+}
+
+.animate-bg:after {
+	filter: brightness(1.4);
+	filter: drop-shadow(16px 16px 20px rgb(248, 220, 97));
+	filter: blur(15px);
 }
