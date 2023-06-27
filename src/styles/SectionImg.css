@@ -1,3 +1,11 @@
 .line {
    color: rgb(222, 203, 108);
 }
+
+.carousel-control-prev-icon {
+   display: none;
+}
+
+.carousel-control-next-icon {
+   display: none;
+}

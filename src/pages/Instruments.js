@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from 'react'
 import "../styles/Instruments.css";
 import Guitar6 from "../images/grasadepez.webp";
 import Guitar7 from "../images/guitar88.webp";
@@ -6,9 +6,18 @@ import Guitar8 from "../images/guitar8.webp";
 import Ubass from "../images/ubass6.webp";
 import Vector from "../images/indiobg3.webp"
 import { Link } from "react-router-dom";
+import { motion, useScroll } from "framer-motion"
+
 
 
 function Instruments() {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll(
+    {
+      target: ref,
+      offset: ["start end", "center start"]
+    }
+  )
   return (
     <>
       <div className="instrumentsBg-container">
@@ -16,18 +25,21 @@ function Instruments() {
           INSTRUMENTOS
         </h2>
       </div>
-      <div className="container-fluid">
+
+      <div className="container-fluid" >
         <div className="container">
           <div className="image">
             <Link to="/instrumentos/baltasarcomotto">
               <img
                 src={Guitar8}
                 alt="Guitarra Acustica Baltasar Comotto"
-                className="guitar6 animate-bg"
+                className="guitar6 animate-bg" 
               />
             </Link>
           </div>
-          <div className="characteristics">
+          <motion.div className="characteristics" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
           <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title'>Guitarra Acústica Baltasar Comotto</h4></Link>
             <p className="instruments-text">
               La guitarra acústica Baltasar Comotto fue diseñada justamente por el artista en cuestión. La
@@ -36,8 +48,9 @@ function Instruments() {
               sonido.
             </p>
             
-          </div>
+          </motion.div>
         </div>
+
         <div className="container">
           <div className="image">
             <Link to="/instrumentos/ismini">
@@ -48,7 +61,9 @@ function Instruments() {
               />
             </Link>
           </div>
-          <div className="characteristics">
+          <motion.div className="characteristics" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
           <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title'>Guitarra Acústica IS Mini</h4></Link>
             <p className="instruments-text">
               La guitarra acústica IS mini fue ideada junto con Gaspar Benegas.
@@ -58,7 +73,7 @@ function Instruments() {
               total.
             </p>
             
-          </div>
+          </motion.div>
         </div>
 
         <div className="container">
@@ -71,7 +86,9 @@ function Instruments() {
               />
             </Link>
           </div>
-          <div className="characteristics">
+          <motion.div className="characteristics" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
           <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title'>Bajo Acústico Grasa de Pez</h4></Link>
             <p className="instruments-text">
               El Bajo acústico Grasa de Pez fue diseñado para el bajista Cristian
@@ -81,7 +98,7 @@ function Instruments() {
               la ejecución de las notas más agudas. Buenos graves y medios.
             </p>
             
-          </div>
+          </motion.div>
         </div>
         <div className="container">
           <div className="image">
@@ -89,7 +106,9 @@ function Instruments() {
               <img src={Ubass} alt="Bajo Acustico U-Bass" className="guitar6" />
             </Link>
           </div>
-          <div className="characteristics">
+          <motion.div className="characteristics" initial={{ y: 50 }}
+      whileInView={{ y: 0 }}
+      transition={{ duration: 0.5, type: "spring" }}>
           <Link to="/instrumentos/baltasarcomotto"><h4 className='instruments-title'>Bajo Acústico U-Bass</h4></Link>
             <p className="instruments-text">
               El U-bass o Uke-Bass acústico fue diseñado junto con Broder Bastos. Se
@@ -98,7 +117,7 @@ function Instruments() {
               usarlo tanto en salas de ensayos, estudios o shows en vivo.
             </p>
             
-          </div>
+          </motion.div>
         </div>
         <hr width="100%" className="line" />
       </div>
@@ -106,3 +125,4 @@ function Instruments() {
   );
 }
 export default Instruments;
+

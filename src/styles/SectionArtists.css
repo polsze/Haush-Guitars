@@ -11,7 +11,7 @@
   color: #fff;
   text-align: center;
   color: rgb(222, 203, 108);
-  font-family: 'Russo One', sans-serif;
+  font-family: 'Caveat', cursive;
 }
 
 .logo {
@@ -21,6 +21,7 @@
 
 .click {
   text-align: center;
+  display: none;
 }
 
 .artists-container {
@@ -175,6 +176,8 @@
 
   .click {
     font-size: 1em;
+    display: block;
+    
   }
 
   .modalArtist2 {

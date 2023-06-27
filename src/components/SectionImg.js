@@ -7,12 +7,14 @@ import Guitar3 from "../images/grasa-carrusel1.webp";
 import Guitar4 from "../images/ms12-carrusel.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import Carousel from 'react-bootstrap/Carousel';
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
 function SectionImg() {
   return (
     <>
-    <Carousel>
-      <Carousel.Item interval={4000}>
+    <Carousel prevIcon={<BsChevronLeft />} 
+      nextIcon={<BsChevronRight />}>
+      <Carousel.Item interval={3000}>
       <Link to='/instrumentos/ismini'>
         <LazyLoadImage
           className="d-block w-100"
@@ -23,7 +25,7 @@ function SectionImg() {
       </Link>
       </Carousel.Item>
 
-      <Carousel.Item interval={4000}>
+      <Carousel.Item interval={3000}>
       <Link to='/instrumentos/baltasarcomotto'>
         <LazyLoadImage
           className="d-block w-100"
@@ -33,7 +35,7 @@ function SectionImg() {
         </Link>
       </Carousel.Item>
 
-      <Carousel.Item interval={4000}>
+      <Carousel.Item interval={3000}>
       <Link to='/instrumentos/grasadepez'>
         <LazyLoadImage
           className="d-block w-100"
@@ -43,7 +45,7 @@ function SectionImg() {
         </Link>
       </Carousel.Item>
 
-       <Carousel.Item interval={4000}>
+       <Carousel.Item interval={3000}>
         <LazyLoadImage
           className="d-block w-100"
           src={Guitar4}
