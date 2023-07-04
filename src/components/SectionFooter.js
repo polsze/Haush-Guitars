@@ -35,6 +35,12 @@ function SectionFooter() {
           >
             <i className="bi bi-whatsapp socialLogo"></i>
           </Link>
+          <Link
+            to="https://www.youtube.com/@Haush.guitars"
+            target="_BLANK"
+          >
+            <i className="bi bi-youtube socialLogo"></i>
+          </Link>
           
         </div>
         <h6>Haush Guitars™ All Rights Reserved.</h6>
@@ -74,7 +80,7 @@ function SectionFooter() {
         <b>Web Design: </b>
         <br/>
         Copyright © 2023 <Link
-            to="https://api.whatsapp.com/send?phone=543765252582"
+            to="https://pbx-six.vercel.app/"
             target="_BLANK"
           >PBX</Link> • Posadas based Freelance Web Designer &
         Developer

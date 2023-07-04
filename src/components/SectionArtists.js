@@ -15,6 +15,7 @@ import Titi2 from "../images/titi.webp";
 import Bastos2 from "../images/bastos2.webp";
 import Scaglione2 from "../images/scaglione2.webp";
 import Sotelo2 from "../images/sotelo.webp";
+import Mariel2 from "../images/marielfuertes2.webp";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 
 
@@ -54,7 +55,7 @@ function SectionArtists() {
     [Titi]: Titi2,
     [Bastos]: Bastos2,
     [Scaglione]: Scaglione2,
-    [Mariel]: Mariel,
+    [Mariel]: Mariel2,
     [Sotelo]: Sotelo2,
   };
 

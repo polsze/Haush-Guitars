@@ -6,6 +6,8 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Instagram from '../images/instagram.webp'
 import Facebook from '../images/facebook.webp'
 import Whatsapp from '../images/whatsapp.webp'
+import Youtube from '../images/youtube.webp'
+import { motion } from 'framer-motion'
 
 
 function Header(props) {
@@ -60,19 +62,25 @@ function Header(props) {
             </li>
           </ul>
           <div className="social-containerH">
-            <Link to="https://www.instagram.com/haushguitars/" target="_BLANK">
+            <motion.a href="https://www.instagram.com/haushguitars/" target="_BLANK" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
               <img src={Instagram} className='red-logo img-fluid' alt='Instagram' />
-            </Link>
+            </motion.a>
 
-            <Link to="https://www.facebook.com/lokustas.sonido" target="_BLANK">
+            <motion.a href="https://www.facebook.com/lokustas.sonido" target="_BLANK" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}>
               <img src={Facebook} className='red-logo1 img-fluid' alt='Instagram' />
-            </Link>
-            <Link
-              to="https://api.whatsapp.com/send?phone=541537034641"
-              target="_BLANK"
+            </motion.a>
+            <motion.a
+              href="https://api.whatsapp.com/send?phone=541537034641"
+              target="_BLANK" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}
             >
               <img src={Whatsapp} className='red-logo2 img-fluid' alt='Instagram' />
-            </Link>
+            </motion.a>
+            <motion.a
+              href="https://www.youtube.com/@Haush.guitars"
+              target="_BLANK" whileHover={{ y: -2 }} whileTap={{ scale: 0.9 }}
+            >
+              <img src={Youtube} className='red-logo2 img-fluid' alt='Instagram' />
+            </motion.a>
           </div>
         </div>
 

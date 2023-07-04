@@ -117,12 +117,20 @@ const Contact = () => {
         </form>
 
         <div className="contact-icons">
+        <div>
           <i class="bi bi-geo-alt"></i>
+        
           <p className="contact-text">Buenos Aires, Argentina</p>
+        </div>
+          <div>
+
           <i class="bi bi-envelope"></i>
           <p className="contact-text">haushguitars@gmail.com</p>
+          </div>
+          <div>
           <i class="bi bi-phone"></i>
           <p className="contact-text">1537034641</p>
+          </div>
         </div>
       </div>
       <hr width="100%" className="line" />

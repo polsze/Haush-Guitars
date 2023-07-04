@@ -17,21 +17,15 @@
 	margin-right: 25px;
 }
 
-
-
 .navbar-toggler {
-	background-color: rgb(222, 203, 108);
-	text-align: center;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border: 2px solid	black;
+	background: rgb(235,118,9);
+	background: linear-gradient(343deg, rgba(235,118,9,1) 12%, rgba(230,235,13,1) 82%);
 	margin-right: 15px;
-	border-radius: 6px;
+	border-radius: 5px;
 }
 
 .navbar-toggler-icon {
-	background-color: rgb(222, 203, 108);
+	background-color: transparent;
 	text-align: center;
 	display: flex;
 	justify-content: center;
@@ -69,30 +63,24 @@
 
 .red-logo {
 	width: 30px;
-	transition: 1s;
+	cursor: pointer;
 }
-.red-logo:hover {
-	transform: scale(1.1);
-}
+
 .red-logo1 {
 	margin-left: 15px;
 	width: 30px;
-	transition: 1s;
+	cursor: pointer;
 }
 
-.red-logo1:hover {
-	transform: scale(1.1);
-}
+
 
 .red-logo2 {
 	margin-left: 15px;
 	width: 30px;
-	transition: 1s;
+	cursor: pointer;
 }
 
-.red-logo2:hover {
-	transform: scale(1.1);
-}
+
 
 /** MEDIA QUERIES**/
 
