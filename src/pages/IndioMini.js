@@ -29,9 +29,9 @@ function IndioMini() {
           Guitarra acústica IS Mini
         </h4>
       </div>
-      <div className="indio-container container-fluid">
+      <section className="indio-container container-fluid">
         <div className="container">
-          
+
           <div className="images-is-container">
             <LazyLoadImage
               src={FotoIS1}
@@ -66,14 +66,14 @@ function IndioMini() {
                 data-aos-duration="2000"
               >
                 <div className="modalIS2">
-                  <LazyLoadImage 
+                  <LazyLoadImage
                     src={imgModalIS[selectedImg]}
                     className="is-Img2 img-fluid"
                     alt="Guitarra Acustica Haush IS MINI"
                   />
-                  <a onClick={() => setShowModal(false)}>
+                  <button onClick={() => setShowModal(false)}>
                     <i className="bi bi-x-circle"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             )}
@@ -113,7 +113,7 @@ function IndioMini() {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
       <Link to="/instrumentos" className="back-button">
         <p>ATRÁS</p>
       </Link>

@@ -4,18 +4,16 @@
   background-image: url(../images/instrumentsBg.webp);
   background-position: center bottom 20%;
   background-size: cover;
-  background-color: rgb(40,40,40);
+  background-color: rgb(40, 40, 40);
   background-blend-mode: soft-light;
   display: flex;
   align-items: center;
-
 }
 
 .container {
   display: flex;
   align-items: center;
   margin-top: 30px;
-
 }
 
 .guitar6 {
@@ -23,7 +21,6 @@
   height: auto;
   object-fit: contain;
   margin-bottom: 25px;
-  
 }
 
 
@@ -43,7 +40,7 @@
   font-size: 4em;
   color: #fff;
   font-family: 'Alegreya Sans SC', sans-serif;
- }
+}
 
 
 .instruments-title {
@@ -58,7 +55,7 @@
 }
 
 .instruments-title:hover {
-  color: #FC1F00;
+  color: rgb(222, 203, 108);
 }
 
 ul {
@@ -69,6 +66,20 @@ ul {
 
 /** MEDIA QUERIES **/
 
+@media screen and (max-width: 820px) {
+
+
+  .characteristics {
+    
+    margin-left: 0px;
+  }
+
+  .instruments-title {
+    margin-left: 0;
+  }
+}
+
+
 @media screen and (max-width: 540px) {
   .instrumentsBg-container {
     height: 55vh;
@@ -78,33 +89,32 @@ ul {
     display: none;
   }
 
-  .guitar6{
+  .guitar6 {
     border-width: 2px;
   }
+
   .container {
     flex-direction: column;
     flex-wrap: wrap;
   }
 
- .instruments-title-h2 {
-  font-size: 2em;
-  margin-bottom: 80px;
- }
+  .instruments-title-h2 {
+    font-size: 2em;
+    margin-bottom: 80px;
+  }
 
- .instruments-title {
-  font-size: 1.8em;
-  margin: 15px 0;
-  white-space: pre-wrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
- }
-}
-
-@media screen and (max-width: 280px) {
- .instruments-title {
-    
-    font-size: 1.3em;
+  .instruments-title {
+    font-size: 1.8em;
+    margin: 15px 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }
 
+@media screen and (max-width: 280px) {
+  .instruments-title {
 
+    font-size: 1.3em;
+  }
+}

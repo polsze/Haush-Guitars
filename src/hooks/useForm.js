@@ -15,7 +15,7 @@ const useForm = (initialData, onValidate) => {
     const err = onValidate(form);
     setErrors(err);
 
-    if (Object.keys(err).length == 0) {
+    if (Object.keys(err).length === 0) {
       setLoading(true);
 
       fetch("https://formsubmit.co/ajax/haushguitars@gmail.com", {

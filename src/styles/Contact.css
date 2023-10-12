@@ -1,8 +1,8 @@
 .contact-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
 }
 
 form {
@@ -20,11 +20,11 @@ textarea {
 
 .contact-icons {
 	width: 80%;
-  display: flex;
- 	align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
-  color: #fff;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: #fff;
 }
 
 .contact-icons i {
@@ -32,7 +32,6 @@ textarea {
 	display: flex;
 	justify-content: center;
 }
-
 
 .contactTitle {
 	margin-top: 35px;
@@ -49,7 +48,7 @@ textarea {
 }
 
 .line {
-   color: rgb(222, 203, 108);
+	color: rgb(222, 203, 108);
 }
 
 /** MEDIA QUERIES **/
@@ -58,11 +57,11 @@ textarea {
 
 	.contact-icons {
 		width: 100%;
-  	flex-wrap: wrap;
+		flex-wrap: wrap;
 	}
 
 	.contact-icons i {
- 		font-size: 2em;
+		font-size: 2em;
 	}
 
 	.contact-icons p {
@@ -90,13 +89,7 @@ textarea {
 
 	.contact-icons {
 		width: 80%;
-  	flex-wrap: wrap;
-  	flex-direction: column;
+		flex-wrap: wrap;
+		flex-direction: column;
 	}
 }
-
-
-
-
-
-

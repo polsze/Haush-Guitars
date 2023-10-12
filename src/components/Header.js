@@ -2,7 +2,6 @@ import React from "react";
 import "../styles/Header.css";
 import HaushLogo from "../images/haushlogo1.webp";
 import { Link } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import Instagram from '../images/instagram.webp'
 import Facebook from '../images/facebook.webp'
 import Whatsapp from '../images/whatsapp.webp'
@@ -13,18 +12,18 @@ import { motion } from 'framer-motion'
 function Header(props) {
 
   return (
-    <div className="header-container">
+    <header className="header-container" id="top">
       <nav className="navbar navbar-expand-lg">
         <div className="logo-container">
-          <a href="/" className="navbar-brand">
-            <LazyLoadImage
+          <Link to="/" className="navbar-brand">
+            <img
               src={HaushLogo}
               className="logo img-fluid"
               alt="Logo de Haush Guitars"
               width="110"
               height="60"
             />
-          </a>
+          </Link>
         </div>
 
         <button
@@ -86,7 +85,7 @@ function Header(props) {
 
       </nav>
 
-    </div>
+    </header>
   );
 }
 export default Header;

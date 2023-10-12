@@ -31,9 +31,9 @@ function Signature() {
           Guitarra acústica Baltasar Comotto
         </h4>
       </div>
-      <div className="signature-container container-fluid">
+      <section className="signature-container container-fluid">
         <div className="container">
-          
+
           <div className="images-signature-container" >
             <LazyLoadImage
               src={FotoSignature1}
@@ -74,9 +74,9 @@ function Signature() {
                     className="signature-Img2 img-fluid"
                   />
 
-                  <a onClick={() => setShowModal(false)}>
+                  <button onClick={() => setShowModal(false)}>
                     <i className="bi bi-x-circle"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             )}
@@ -116,7 +116,7 @@ function Signature() {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
       <Link to="/instrumentos" className="back-button">
         <p>ATRÁS</p>
       </Link>

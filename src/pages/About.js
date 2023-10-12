@@ -5,7 +5,7 @@ import guitars from "../images/claybass.webp";
 
 function SectionAbout() {
   return (
-    <div className="about-container ">
+    <section className="about-container ">
       <hr width="100%" className="line" />
       <div className="about-container2">
         <div className="left-about">
@@ -36,7 +36,7 @@ function SectionAbout() {
         </div>
       </div>
       <hr width="100%" className="line" />
-    </div>
+    </section>
   );
 }
 

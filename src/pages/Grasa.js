@@ -30,9 +30,9 @@ function Grasa() {
           Bajo acústico Grasa de Pez
         </h4>
       </div>
-      <div className="grasa-container container-fluid">
+      <section className="grasa-container container-fluid">
         <div className="container">
-          
+
           <div className="images-grasa-container">
             <LazyLoadImage
               src={FotoGrasa1}
@@ -74,9 +74,9 @@ function Grasa() {
                     alt="Bajo Haush Grasa de Pez"
                   />
 
-                  <a onClick={() => setShowModal(false)}>
+                  <button onClick={() => setShowModal(false)}>
                     <i className="bi bi-x-circle"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             )}
@@ -113,7 +113,7 @@ function Grasa() {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
       <Link to="/instrumentos" className="back-button">
         <p>ATRÁS</p>
       </Link>

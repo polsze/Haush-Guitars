@@ -29,7 +29,7 @@ function Ubass() {
           Bajo acústico U-Bass
         </h4>
       </div>
-      <div className="ubass-container container-fluid">
+      <section className="ubass-container container-fluid">
         <div className="container">
 
           <div className="images-ubass-container">
@@ -72,9 +72,9 @@ function Ubass() {
                     className="ubass-Img2 img-fluid"
                   />
 
-                  <a onClick={() => setShowModal(false)}>
+                  <button onClick={() => setShowModal(false)}>
                     <i className="bi bi-x-circle"></i>
-                  </a>
+                  </button>
                 </div>
               </div>
             )}
@@ -114,7 +114,7 @@ function Ubass() {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
       <Link to="/instrumentos" className="back-button">
         <p>ATRÁS</p>
       </Link>

@@ -51,7 +51,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="contact-container container-fluid">
+      <section className="contact-container container-fluid">
         <h4 className="contactTitle">Formulario de contacto</h4>
         <form className="" onSubmit={handleSubmit}>
           <label className="form-label">Nombre</label>
@@ -117,22 +117,22 @@ const Contact = () => {
         </form>
 
         <div className="contact-icons">
-        <div>
-          <i class="bi bi-geo-alt"></i>
-        
-          <p className="contact-text">Buenos Aires, Argentina</p>
-        </div>
+          <div>
+            <i class="bi bi-geo-alt"></i>
+
+            <p className="contact-text">Buenos Aires, Argentina</p>
+          </div>
           <div>
 
-          <i class="bi bi-envelope"></i>
-          <p className="contact-text">haushguitars@gmail.com</p>
+            <i class="bi bi-envelope"></i>
+            <p className="contact-text">haushguitars@gmail.com</p>
           </div>
           <div>
-          <i class="bi bi-phone"></i>
-          <p className="contact-text">1537034641</p>
+            <i class="bi bi-phone"></i>
+            <p className="contact-text">1537034641</p>
           </div>
         </div>
-      </div>
+      </section>
       <hr width="100%" className="line" />
     </>
   );

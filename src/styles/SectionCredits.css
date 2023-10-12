@@ -1,0 +1,41 @@
+.creditsCont {
+  overflow: hidden;
+
+}
+
+.logos-cont {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.graceful {
+  text-align: center;
+  font-size: 2em;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logos1 {
+  object-fit: contain;
+}
+
+/** MEDIA QUERIES **/
+
+@media screen and (max-width: 540px) {
+  .logos1 {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .graceful {
+    font-size: 1.2em;
+  }
+
+  .logos1 {
+    width: 60px;
+    height: 60px;
+  }
+}

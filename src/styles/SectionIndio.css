@@ -1,9 +1,10 @@
 .sectionIndio-container {
   display: flex;
-  background-image: url(../images/bgIndio.webp);
+  background-image: url(../images/ismini.webp);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   background-attachment: fixed;
+  background-position: right;
 }
 
 .imagen-indio-cont {
@@ -22,47 +23,49 @@
 }
 
 .img-indio {
-	filter: brightness(.6);
-	
-	border-radius: 10px;
+  filter: brightness(.6);
+
+  border-radius: 10px;
 }
 
 .textIndio-container h2 {
-	font-size: 3.5em;
-	color: #fff;
-	font-family: 'Alegreya Sans SC', sans-serif;
+  font-size: 3.5em;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
 }
 
 .textIndio-container p {
-	color: #fff;
-	font-size: 1.5em;
-	width: 80%;
+  color: #fff;
+  font-size: 1.5em;
+  width: 80%;
 }
 
-/** MEDIA QUERIES **/ 
+/** MEDIA QUERIES **/
 
 @media screen and (max-width: 540px) {
-	.sectionIndio-container {
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+  .sectionIndio-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+    background-attachment: inherit;
+  }
 
-.textIndio-container {
-	left: 0;
-	bottom: 0;
-}
+  .textIndio-container {
+    left: 0;
+    bottom: 0;
+  }
 
-.textIndio-container h2 {
-	font-size: 1.8em;
-}
+  .textIndio-container h2 {
+    font-size: 1.8em;
+  }
 
-.textIndio-container p {
-	font-size: 1em;
-}
+  .textIndio-container p {
+    font-size: 1em;
+  }
 
-.img-indio {
-	left : 0;
-  
-}
+  .img-indio {
+    left: 0;
+
+  }
 }

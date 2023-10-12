@@ -5,20 +5,20 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: rgb(40,40,40);
+  background-color: rgb(40, 40, 40);
   background-blend-mode: soft-light;
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center;
 }
 
 .ubass-container {
-	margin-top: 10px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-h3  {
+h3 {
   color: #fff;
   font-size: 3em;
   font-family: 'Alegreya Sans SC', sans-serif;
@@ -64,7 +64,8 @@ h3  {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Agregar un valor alto de z-index */
+  z-index: 9999;
+  /* Agregar un valor alto de z-index */
 }
 
 .modalUbass2 {
@@ -72,7 +73,7 @@ h3  {
   width: 40%;
   height: 100%;
   background-image: url(../images/bgmodal.webp);
-  background-color: rgb(30,30,30);
+  background-color: rgb(30, 30, 30);
   background-blend-mode: soft-light;
   background-repeat: no-repeat;
   background-size: cover;
@@ -90,10 +91,10 @@ h3  {
   width: 80%;
   height: 100%;
   object-fit: cover;
-  box-shadow: 2px 6px 98px 0px rgba(250,250,250,0.75);
--webkit-box-shadow: 2px 6px 98px 0px rgba(250,250,250,0.75);
--moz-box-shadow: 2px 6px 98px 0px rgba(250,250,250,0.75);
-border-radius: 10px;
+  box-shadow: 2px 6px 98px 0px rgba(250, 250, 250, 0.75);
+  -webkit-box-shadow: 2px 6px 98px 0px rgba(250, 250, 250, 0.75);
+  -moz-box-shadow: 2px 6px 98px 0px rgba(250, 250, 250, 0.75);
+  border-radius: 10px;
 }
 
 .modalText {
@@ -101,13 +102,15 @@ border-radius: 10px;
   margin-top: 15px;
 }
 
-.modalUbass a {
+.modalUbass button {
   position: absolute;
   top: 1px;
   right: 5px;
   border-radius: 10px;
   padding: 2px;
   font-size: 1.5em;
+  background-color: transparent;
+  border: none;
 }
 
 .modalTitle2 {
@@ -133,9 +136,23 @@ border-radius: 10px;
 
 /** MEDIA QUERIES **/
 
+@media screen and (max-width: 1023px) {
+  .modalUbass2 {
+    width: 90%;
+  }
+
+  .modalUbass .ubass-Img2 {
+    width: 90%;
+  }
+
+  .images-ubass-container {
+    width: 90%;
+  }
+}
+
 @media screen and (max-width: 540px) {
   .ubassBg-container {
-     height: 50vh;
+    height: 50vh;
   }
 
   .characteristics h3 {
@@ -144,15 +161,15 @@ border-radius: 10px;
     margin-bottom: 20px;
   }
 
-.modalUbass2{
-  width: 100%;
-}
+  .modalUbass2 {
+    width: 100%;
+  }
 
-.modalUbass .ubass-Img2 {
-  width: 100%;
-}
+  .modalUbass .ubass-Img2 {
+    width: 100%;
+  }
 
-.images-ubass-container {
-  width: 100%;
-}
+  .images-ubass-container {
+    width: 100%;
+  }
 }

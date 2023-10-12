@@ -4,7 +4,7 @@
 
 .right-about {
   background-image: url(../images/ebano.webp);
-  background-color: rgb(30,30,30);
+  background-color: rgb(30, 30, 30);
   background-blend-mode: soft-light;
   display: flex;
   justify-content: center;
@@ -16,24 +16,22 @@
 }
 
 .aboutTitle {
- text-align: center;
- font-size: 4em;
- color: #fff;
- font-family: 'Alegreya Sans SC', sans-serif;
+  text-align: center;
+  font-size: 4em;
+  color: #fff;
+  font-family: 'Oswald', sans-serif;
 }
 
 .aboutText {
   width: 70%;
-  color:#fff;
+  color: #fff;
   font-size: 1.2em;
   text-align: start;
-  font-family: 'Exo 2', sans-serif;
-
-
+  font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .line {
-   color: rgb(222, 203, 108);
+  color: rgb(222, 203, 108);
 }
 
 /** MEDIA QUERIES **/
@@ -44,7 +42,7 @@
   }
 
   .aboutText {
-     font-size: 1em;
+    font-size: 1em;
   }
 
 }
@@ -57,11 +55,10 @@
 
 @media screen and (max-width: 1352px) {
   .about-container2 {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 
+  }
 }
-}
-

@@ -1,0 +1,71 @@
+.banner-cont {
+  height: auto;
+  width: 100%;
+  background-color: rgb(222, 203, 108);
+  overflow: hidden;
+  padding: 5px;
+  margin-top: 60px;
+}
+
+.imgbanner-cont {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+}
+
+.imgbanner {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.tituloBanner {
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #000;
+  text-decoration: none;
+}
+
+.tituloBanner:hover {
+  color: #000;
+}
+
+.titleBanner-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.botonCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/** MEDIA QUERIES **/
+
+@media screen and (max-width: 540px) {
+  .banner-cont {
+    margin-top: 0;
+  }
+
+  .imgbanner-cont {
+    flex-direction: column;
+  }
+
+  .imgbanner {
+    height: 150px;
+    width: 150px;
+  }
+
+  .tituloBanner {
+    font-size: 1.2em;
+  }
+}

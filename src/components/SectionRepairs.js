@@ -2,18 +2,17 @@ import React from "react";
 import "../styles/SectionRepairs.css";
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import asd1 from '../images/guitar-repair.webp'
+import GuitarRepair from '../images/guitar-repair.webp'
 
 
 
 function SectionRepairs() {
   return (
     <>
-      <div className="repairsBg">
-      <LazyLoadImage src={asd1} alt="" className="guitar-repair img-fluid" />
+      <section className="repairsBg">
+        <LazyLoadImage src={GuitarRepair} alt="" className="guitar-repair img-fluid" />
         <div className="repairs-container container-fluid">
           <div className="listRepairs">
-            
             <h5>Mantenimiento y puesta a punto de instrumentos musicales</h5>
             <ul>
               <li>Reparaciones </li>
@@ -28,9 +27,9 @@ function SectionRepairs() {
             </p>
           </div>
         </div>
-      </div>
+      </section>
       <hr width="100%" className="line" />
-      
+
     </>
   );
 }

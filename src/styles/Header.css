@@ -3,7 +3,6 @@
 	justify-content: center;
 	align-items: center;
 	transition: 1s;
-	background-color: #000;
 }
 
 .navbar {
@@ -18,8 +17,8 @@
 }
 
 .navbar-toggler {
-	background: rgb(235,118,9);
-	background: linear-gradient(343deg, rgba(235,118,9,1) 12%, rgba(230,235,13,1) 82%);
+	background: rgb(235, 118, 9);
+	background: linear-gradient(343deg, rgba(235, 118, 9, 1) 12%, rgba(230, 235, 13, 1) 82%);
 	margin-right: 15px;
 	border-radius: 5px;
 }
@@ -49,8 +48,11 @@
 }
 
 .nav-item a:hover {
-	color: #FC1F00;
+	color: #fff;
+	transform: scale(1.1);
 }
+
+
 
 .social-containerH {
 	display: flex;
@@ -99,13 +101,13 @@
 
 @media screen and (max-width: 540px) {
 
-.logo-container img {
-	margin-left: 10px;
-}
+	.logo-container img {
+		margin-left: 10px;
+	}
 
-.navbar {
-	flex: 2;
-}
+	.navbar {
+		flex: 2;
+	}
 
 	.logo-container {
 		flex: 1;
@@ -117,4 +119,3 @@
 	}
 
 }
-

@@ -89,10 +89,10 @@ function SectionArtists() {
   return (
     <>
       <div className='title-logo-artist-cont'>
-      <h4 className='artistTitle' data-aos="fade-up" data-aos-duration="3000">ARTISTAS QUE USAN HAUSH</h4>
-       </div>
+        <h4 className='artistTitle'>ARTISTAS QUE USAN HAUSH</h4>
+      </div>
       <p className="click">Toque en las imagenes para más...</p>
-      <div className="artists-container container-fluid">
+      <section className="artists-container container-fluid">
         <LazyLoadImage
           src={Balta}
           className="artist-Img img-fluid"
@@ -129,13 +129,13 @@ function SectionArtists() {
           onClick={() => handleImgClick(Sbaraglia)}
           alt='Pablo Sbaraglia'
         />
-        <LazyLoadImage 
+        <LazyLoadImage
           src={Mariel}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Mariel)}
           alt="Mariel Fuertes"
         />
-        <LazyLoadImage 
+        <LazyLoadImage
           src={Sotelo}
           className="artist-Img img-fluid"
           onClick={() => handleImgClick(Sotelo)}
@@ -174,13 +174,13 @@ function SectionArtists() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen
               ></iframe>
-              <a onClick={() => setShowModal(false)}>
+              <button onClick={() => setShowModal(false)}>
                 <i className="bi bi-x-circle"></i>
-              </a>
+              </button>
             </div>
           </div>
         )}
-      </div>
+      </section>
       <hr width="100%" className="line" />
     </>
   );

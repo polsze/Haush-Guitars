@@ -17,10 +17,10 @@
 }
 
 .guitar-repair {
-width: 330px;
-position: absolute;
-right: 20px;
-z-index: -1;
+	width: 330px;
+	position: absolute;
+	right: 20px;
+	z-index: -1;
 }
 
 .listRepairs ul {
@@ -37,14 +37,14 @@ z-index: -1;
 	margin-bottom: 15px;
 	font-size: 1.5em;
 	margin-top: 5px;
-	
+
 }
 
 h5 {
 	text-align: center;
 	font-size: 2.3em;
 	color: #fff;
-	font-family: 'Alegreya Sans SC', sans-serif;
+	font-family: 'Oswald', sans-serif;
 }
 
 .textRepairs-container p {
@@ -90,5 +90,3 @@ h5 {
 		background-position: 50%;
 	}
 }
-
-

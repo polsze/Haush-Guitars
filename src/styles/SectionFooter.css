@@ -5,7 +5,7 @@
   justify-content: space-around;
   text-align: center;
   background-color: #000;
-  
+
 }
 
 .logo-social-container {
@@ -30,8 +30,8 @@
 }
 
 .footer-container p {
-	font-size: .8em;
-	color: #B6B2B3;
+  font-size: .8em;
+  color: #B6B2B3;
 }
 
 .bi-arrow-up-circle {
@@ -46,25 +46,15 @@
   cursor: pointer;
 }
 
-.logos-cont {
-  display: flex;
-  flex-direction: row;
-}
-
-.graceful {
- margin-top: 10px;
-}
-
-.logos1 {
-  object-fit: contain;
-  padding: 20px;
+.contactFooterPath {
+  color: #fff;
+  transition: 1s;
 }
 
 .credit {
   text-align: center;
   font-size: .9em;
 }
-
 
 /** MEDIA QUERIES **/
 
@@ -78,32 +68,24 @@
     height: auto;
   }
 
-  .logoFooter {
+  .logos-cont {
+    margin-left: 0;
   }
 
-  .logos-cont{
-    margin-left: 0;
+  .credit {
+    font-size: 1.4em;
   }
 }
 
 @media screen and (max-width: 540px) {
-  .logoFooter {
-    
-  }
-  .social-containerF {
-   
-  }
-  .social-containerF i { 
+
+  .social-containerF i {
     margin: 12.5px;
-    
+
   }
 
-  .graceful {
-   margin-top: 10px;
-   margin-bottom: -15px;
-   margin-right: 0;
+  .credit {
+    font-size: 1.1em;
   }
-  
- 
+
 }
-

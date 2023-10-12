@@ -1,60 +1,74 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../styles/SectionImg.css";
-import Guitar1 from "../images/is-carrusel1.webp";
-import Guitar2 from "../images/comotto-carrusel1.webp";
-import Guitar3 from "../images/grasa-carrusel1.webp";
-import Guitar4 from "../images/ms12-carrusel.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
-import Carousel from 'react-bootstrap/Carousel';
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
+import { motion } from "framer-motion"
+import { Link } from "react-router-dom";
 
 function SectionImg() {
+  const titulo = "HAUSH GUITARS"
+  const subtitulo = "NUESTROS INSTRUMENTOS"
+
+  const sentence = {
+    hidden: {
+      opacity: 1,
+
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: 0.5,
+        staggerChildren: 0.08,
+      },
+    },
+  }
+
+  const letter = {
+    hidden: {
+      opacity: 0,
+      y: 50
+    },
+    visible: {
+      opacity: 1,
+      y: 0,
+    },
+  }
+
   return (
     <>
-    <Carousel prevIcon={<BsChevronLeft />} 
-      nextIcon={<BsChevronRight />}>
-      <Carousel.Item interval={3000}>
-      <Link to='/instrumentos/ismini'>
-        <LazyLoadImage
-          className="d-block w-100"
-          src={Guitar1}
-          alt="Guitarra IS MINI"
-        />
+      <section className="heroCont">
+        <div className="hero">
+          <div className="heroh1">
+            <motion.h1
+              variants={sentence}
+              initial="hidden"
+              animate="visible"
+            >
+              {titulo.split("").map((char, index) => {
+                return (
+                  <motion.span key={char + "-" + index} variants={letter}>
+                    {char}
+                  </motion.span>
+                )
+              })
+              }
 
-      </Link>
-      </Carousel.Item>
+            </motion.h1>
+            <Link
+              to='/instrumentos/' className="btn-hero"
+            ><motion.h4 variants={sentence}
+              initial="hidden"
+              animate="visible">{subtitulo.split("").map((char, index) => {
+                return (
+                  <motion.span key={char + "-" + index} variants={letter}>
+                    {char}
+                  </motion.span>
+                )
+              })
 
-      <Carousel.Item interval={3000}>
-      <Link to='/instrumentos/baltasarcomotto'>
-        <LazyLoadImage
-          className="d-block w-100"
-          src={Guitar2}
-          alt="Guitarra Baltasar Comotto"
-        />
-        </Link>
-      </Carousel.Item>
-
-      <Carousel.Item interval={3000}>
-      <Link to='/instrumentos/grasadepez'>
-        <LazyLoadImage
-          className="d-block w-100"
-          src={Guitar3}
-          alt="Bajo acústico Grasa de Pez"
-        />
-        </Link>
-      </Carousel.Item>
-
-       <Carousel.Item interval={3000}>
-        <LazyLoadImage
-          className="d-block w-100"
-          src={Guitar4}
-          alt="Bajo eléctrico MS-12 Marcos Sotelo"
-        />
-      </Carousel.Item>
-
-    </Carousel>
-    <hr width="100%" className="line" />
+                }</motion.h4></Link>
+          </div>
+        </div>
+      </section>
+      <hr width="100%" className="line" />
     </>
   );
 }
